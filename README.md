@@ -12,7 +12,7 @@ Before each meeting, the link will be posted here
 
 |Date & Time | Topics  |
 |--|--|
-| Jun 18 - 09.00 PM EST | Weekly Performance Pod |
+| Jun 18 - 09.00 PM EST | Weekly Performance Pod - Kickoff |
 | Jun 26 - 11.00 AM EST | Which tools we need to learn right now |
 
 # ⚠ Rules
