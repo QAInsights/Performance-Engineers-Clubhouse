@@ -24,4 +24,4 @@ Before each meeting, the link will be posted here
 
 # To sponsor the talks
 
-Please contact us at 📩 [here](contact@qainsights.com).
+Please contact us at 📩 [here](mailto:contact@qainsights.com).
