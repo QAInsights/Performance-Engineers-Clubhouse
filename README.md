@@ -2,7 +2,7 @@
 
 # 🎯 Objective
 
-> To learn and share all things about performance testing, engineering, SRE, DevOps and more
+> To learn and share all things about performance testing, engineering, SRE, DevOps and more.
 
 # 🤝 How to join?
 
