@@ -14,9 +14,9 @@ Before each meeting, the link will be posted here:
 
 |Date & Time | Topics  | Link |
 |--|--|--|
-| Jun 18 - 09.00 PM EST | Weekly Performance Pod - Kickoff | |
-| Jun 26 - 11.00 AM EST | Which tools we need to learn right now | |
-| Jul 3 - 11.30 AM EST | Analyzing Test Results - Tips & Tricks | [Invite](https://www.clubhouse.com/event/P9K7NgLA) |
+| Jun 18 2021 - 09.00 PM EST | Weekly Performance Pod - Kickoff | |
+| Jun 26 2021 - 11.00 AM EST | Which tools we need to learn right now | |
+| Jul 03 2021 - 11.30 AM EST | Analyzing Test Results - Tips & Tricks | [Invite](https://www.clubhouse.com/event/P9K7NgLA) |
 
 # ⚠ Rules
 
