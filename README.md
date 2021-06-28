@@ -28,3 +28,9 @@ Before each meeting, the link will be posted here:
 # 💰 To sponsor the talks
 
 Please contact us at 📩 [here](mailto:contact@qainsights.com).
+
+# Appendix
+
+## About Clubhouse
+
+* [Clubhouse Community Guidelines](https://www.notion.so/Community-Guidelines-461a6860abda41649e17c34dc1dd4b5f)
