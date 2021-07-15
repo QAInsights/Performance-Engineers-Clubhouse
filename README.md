@@ -12,13 +12,13 @@ Before each meeting, the link will be posted here:
 
 > [Time Zone Converter](https://www.worldtimebuddy.com)
 
-|Date & Time | Topics  | Link |
+|Date & Time | Topics | Link |
 |--|--|--|
 | Jun 18 2021 - 09.00 PM EST | Weekly Performance Pod - Kickoff | |
 | Jun 26 2021 - 11.00 AM EST | Which tools we need to learn right now? | |
 | Jul 03 2021 - 11.30 AM EST | Analyzing Test Results - Tips & Tricks | [Invite](https://www.clubhouse.com/event/P9K7NgLA) |
 | Jul 09 2021 - 11.30 AM EST | Shift-Left Performane Testing  | [Invite](https://www.clubhouse.com/join/performance-engineers/dUkV1zI0/MRDp8LVE) |
-| Jul 17 2021 - 10.00 AM EST | Java Performance  | [Invite](https://www.clubhouse.com/join/performance-engineers/rPsHTge0/xB0Kj016) |
+| Jul 17 2021 - 10.00 AM EST | Java Performance - Guest Speaker: Ram Lakshmanan  | [Invite](https://www.clubhouse.com/join/performance-engineers/rPsHTge0/xB0Kj016) |
 
 # ⚠ Rules
 
