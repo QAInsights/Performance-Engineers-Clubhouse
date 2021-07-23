@@ -11,12 +11,13 @@ Apart from the generic Clubhouse rules, please note down the following.
 
 # 1️⃣ During the session
 
-* Clubhouse is an audio-only platform with chat support, there will bo visuals
+* Clubhouse is an audio-only platform with chat support, there will no visuals
 * Most of the audience expertise is beginners and intermediate level
 * Please note that to run the session interactive, any admitted attendee can interrupt you and ask the question
 * Please try to explain with realtime examples without breaking the NDA or other confidentiality 
 * For every five or ten minutes, please ask the audience whether they have any questions or not.
 * Hosts will be monitoring the chat, if any questions asked, host will be reading them.
+* Please try to avoid the session like marketing or sales pitch, instead explain the features from the performance testing/engineering perspective
 * Session duration would be 45 minutes to 60 minutes, but it may extend up to 90 minutes
 
 # 2️⃣ After the session
