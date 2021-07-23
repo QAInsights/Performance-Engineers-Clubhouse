@@ -8,6 +8,10 @@ Apart from the generic Clubhouse rules, please note down the following.
 
 * Please join the `Performance Engineers` club and follow it
 * Please follow `NaveenKumar Namachivayam`, so that he can add you as a cohost while scheduling the session.
+* Be familiar with the Clubhouse app
+* Charge your mobile fully
+* Have water next to you
+* Join from the quiet room
 
 # 1️⃣ During the session
 
@@ -22,4 +26,4 @@ Apart from the generic Clubhouse rules, please note down the following.
 
 # 2️⃣ After the session
 
-* I will share the feedback after the session
+* I will share the feedback after the session, if any
