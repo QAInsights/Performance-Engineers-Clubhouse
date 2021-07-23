@@ -11,7 +11,7 @@ Apart from the generic Clubhouse rules, please note down the following.
 * Be familiar with the Clubhouse app
 * Charge your mobile fully
 * Have water next to you
-* Join from the quiet room
+* Join from quiet room
 
 # 1️⃣ During the session
 
