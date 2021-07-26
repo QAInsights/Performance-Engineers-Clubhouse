@@ -6,7 +6,7 @@
 
 # 🤝 How to join?
 
-Before each meeting, the link will be posted here.
+Clubhouse is now open to all, here is the [direct link](https://www.clubhouse.com/club/performance-engineers) to join.
 
 # 📲 Meetings
 
