@@ -27,7 +27,7 @@ Clubhouse is now open to all, here is the [direct link](https://www.clubhouse.co
 
 # 👥 Members Count
 
-**215**
+**240+**
 
 # ⚠ Rules
 
