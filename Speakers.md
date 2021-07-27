@@ -13,6 +13,8 @@ Apart from the generic Clubhouse rules, please note down the following:
 * Have water next to you
 * Join from quiet room
 
+> ⚠ IMPORTANT NOTE: Please do NOT start the session, I will be starting the session on time.
+
 # 1️⃣ During the session
 
 * Clubhouse is an audio-only platform with chat support, there will no visuals
