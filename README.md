@@ -20,6 +20,10 @@ Clubhouse is now open to all, here is the [direct link](https://www.clubhouse.co
 | Jul 09 2021 - 11.30 AM EST | Shift-Left Performane Testing  | [Invite](https://www.clubhouse.com/join/performance-engineers/dUkV1zI0/MRDp8LVE) |
 | Jul 17 2021 - 10.00 AM EST | Java Performance - Guest Speaker: Ram Lakshmanan  | [Invite](https://www.clubhouse.com/join/performance-engineers/rPsHTge0/xB0Kj016) |
 | Jul 24 2021 - 11.00 AM EST | Load Testing with RedLine13 - Guest Speaker: Richard Friedman  | [Invite](https://www.clubhouse.com/event/xp1v57rj) |
+| Jul 31 2021 - 11.00 AM EST | <>  | [Join](https://www.clubhouse.com/club/performance-engineers) |
+| Aug 07 2021 - 11.00 AM EST | <>  | [Join](https://www.clubhouse.com/club/performance-engineers) |
+| Aug 14 2021 - 11.00 AM EST | <>  | [Join](https://www.clubhouse.com/club/performance-engineers) |
+| Aug 21 2021 - 11.00 AM EST | Evolution of Chaos Engineering - Guest Speaker: Karthik Satchutanand  | [Join](https://www.clubhouse.com/club/performance-engineers) |
 
 # 👥 Members Count
 
