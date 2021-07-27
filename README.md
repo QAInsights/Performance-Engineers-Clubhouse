@@ -23,7 +23,7 @@ Clubhouse is now open to all, here is the [direct link](https://www.clubhouse.co
 | Jul 31 2021 - 11.00 AM EST | <>  | [Join](https://www.clubhouse.com/club/performance-engineers) |
 | Aug 07 2021 - 11.00 AM EST | <>  | [Join](https://www.clubhouse.com/club/performance-engineers) |
 | Aug 14 2021 - 11.00 AM EST | <>  | [Join](https://www.clubhouse.com/club/performance-engineers) |
-| Aug 21 2021 - 11.00 AM EST | Evolution of Chaos Engineering - Guest Speaker: Karthik Satchutanand  | [Join](https://www.clubhouse.com/club/performance-engineers) |
+| Aug 21 2021 - 11.00 AM EST | Evolution of Chaos Engineering - Guest Speaker: Karthik Satchitanand  | [Join](https://www.clubhouse.com/club/performance-engineers) |
 
 # 👥 Members Count
 
