@@ -22,7 +22,7 @@ Clubhouse is now open to all, here is the [direct link](https://www.clubhouse.co
 | Jul 24 2021 - 11.00 AM EST | Load Testing with RedLine13 - Guest Speaker: Richard Friedman  | [Invite](https://www.clubhouse.com/event/xp1v57rj) |
 | Jul 31 2021 - 11.00 AM EST | Resume and Interview Tips  | [Join](https://www.clubhouse.com/join/performance-engineers/hHzngkSY/xlj3E19L) |
 | Aug 07 2021 - 11.00 AM EST | Realistic Load Testing - Guest Speaker: Nicole van der Hoeven  | [Join](https://www.clubhouse.com/join/performance-engineers/guivekjO/m2j1DzDq) |
-| Aug 14 2021 - 11.00 AM EST | <>  | [Join](https://www.clubhouse.com/club/performance-engineers) |
+| Aug 14 2021 - 11.00 AM EST | Recording and Scripting Challenges  | [Join](https://www.clubhouse.com/join/performance-engineers/H10OB0zQ/PY4Y3AdO) |
 | Aug 21 2021 - 11.00 AM EST | Evolution of Chaos Engineering - Guest Speaker: Karthik Satchitanand  | [Join](https://www.clubhouse.com/join/performance-engineers/mVMWveXd/xpXlkNLq) |
 
 # 👥 Members Count
