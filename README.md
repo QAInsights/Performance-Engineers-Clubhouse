@@ -25,9 +25,13 @@ Clubhouse is now open to all, here is the [direct link](https://www.clubhouse.co
 | Aug 14 2021 - 11.00 AM EST | Recording and Scripting Challenges  | [Join](https://www.clubhouse.com/join/performance-engineers/H10OB0zQ/PY4Y3AdO) |
 | Aug 21 2021 - 11.00 AM EST | Evolution of Chaos Engineering - Guest Speaker: Karthik Satchitanand  | [Join](https://www.clubhouse.com/join/performance-engineers/mVMWveXd/xpXlkNLq) |
 
+# 📽 Recordings
+
+Please check [QAInsights YouTube playlist](https://youtube.com/playlist?list=PLJ9A48W0kpRJeKrDiNyFpUUlazU_aiPWM) for the recordings.
+
 # 👥 Members Count
 
-**245+**
+**350+**
 
 # ⚠ Rules
 
