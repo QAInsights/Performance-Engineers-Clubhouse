@@ -1,5 +1,9 @@
 # 👋 Welcome to Performance Engineers Clubhouse!
 
+<p align="center">
+    <img src="./resources/banner.jpeg" alt="alternate text">
+</p>
+
 # 🎯 Objective
 
 > To learn and share all things about performance testing, engineering, SRE, DevOps and more.
