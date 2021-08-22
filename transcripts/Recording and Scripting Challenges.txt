@@ -1,0 +1,455 @@
+Hi, guys. Welcome to the 9th session of Performance Engineers Club. So today we are going to talk about recording and scripting challenges. Let us wait for 1 minute and then we can get started. So if you are new to Club O, please raise your hand so that I can admit to the stage so that we can discuss the topic. So let us exactly start after a minute.
+Hey, good morning.
+Good morning.
+I mean, frequently I've been following up with you and it's quite good to have in touch with you, and the topics are really interesting. So I for the community.
+Thank you guys. Just wait for one more minute and then we can get started. Sure. Yeah.
+Thank you.
+Okay, let's get started. Thank you everyone for joining this club session. As you know, this is our 9th session. So today we are going to discuss recording and scripting challenges. Next week we will have a car tick from Chaos native who will be discussing about Chaos engineering. And this session is being recorded. So I'm using an app called Backstage. It is not released. It's still in beta stage. So I'm not sure how the quality and other aspects. I never tested it. Probably once the session is done, I have to analyze the audio recording, and then I will publish it to my YouTube channel if you're talking about some sensitive information. So please refine. I do not tell the client or what kind of technology you are working. So those kind of details we don't want because I'm not going to edit the audio. I am just going to publish as it is. So it'll get started. So first we will divide the session into two topics. First we will talk about one way about recording, then we talk about the scripting challenges. So there are a lot of stuff to discuss, but we will stick to a very important area where as a performance tester an engineer, we face the issues and how we can solve the issue. So those things we will discuss. So let us start with recording recording. As you know, it is one of the very critical step in the inception phase where we will basically use a browser. Or if you are using some thick client application, you will definitely face some issues because the tool which you are using might not get capture the request. Even if it is capturing, it will throw some, say assessor error. So that is one of the frequently faced problem. And during the recording itself, sometimes the application will crash or it is taking too long to process. So additional very commonly faced problems in our day to day life. So this recording tips and tricks, whatever I learned. So I'm going to share it. And of course, we can discuss among others. And then definitely you can get some insights. So before you start recording, you can take these steps. So how many of you read the actual product documentation when it comes to recording irrespective too. I'm not talking about any specific tool. I'm just generally asking recording perspective. Do you guys read the official documentation? How many of you read that? Anybody, if you are new to club, please raise your hand so that I can admit to the stage. So I assume no one reads. Okay, I'm assuming that even I was like that only when I started as a performance in way I never read anything, but it's always good to read the compatible version. So which version of the browser is compatible with your tool? So there is one of the main checkpoint. You have to add it if you are not doing that, because if you take any commercial tool, they will freeze some of the versions when it comes to browser compatibility. So you will have some advanced the latest version of browser, but the tool might not support that. So if you're trying to record it will not work properly, and then you have to write a support ticket or you have to debug by yourself and you reach nowhere. So always whenever it comes to recording, if you are using commercial tools like Neo, Load or Load one, go to the product compatibility matrix and see which version you are using and which browser you have installed and whether it is matching or not. So this issue I have faced already accidentally updated my browser to the latest version, but it was not able to capture anything. So this is the first point you have to remember. Always check the compatibility matrix. So this is when it comes to commercial, but if you take a meter and there's really not a compatibility version might not matter. You can have any version and then you can get started. So it depends on the tool you are working, but it's always good to check the official documentation about the browser version. So this is one thing. And next thing usually we face is the events will not get the recurrent. So whenever you start something, you open your application and definitely it will not capture anything, and then it will say everything is a blank. So this is again the usual problem you get. So this might be due to many reasons, the application technology stack itself. It is not compatible with the browser. That is one thing, and the proxy related firewall related issues. We might be there and it will capture only very few calls. Remaining calls. I don't get captured because of the settings, whatever you have enabled. So there are a lot of reasons might be there. So in this case you have to debug your recording settings. So you have to go through each and every setting and you are recording. And I try to use the default one if you have changed anything. Right? So I put it as a default and start again. So that might work. And also proxy proxy again. There are two things you have to know. One is if you are using Chrome.
+A.
+Chromium based browsers, or Internet Explorer or Edge, right? You have to change the proxy in your system. Okay. But if you are using Firefox, you have to change the proxy in the Firefox settings. So there are two different things you have to understand. This is also a very important point because if you take any enterprise, they don't allow you to install Firefox. At least most of the clients I have worked, they never allow me to install Firefox because five. Lock the proxy layer. Right. It is embedded within the browser itself. So you can easily change the proxy and then you can access the website. So that is why they always tell a do not install Firefox. Always use the default version. So if you are using Firefox, you have to change the proxy in the Firefox settings. If you are using Chromium based browser, you have to change the proxy in your operating system. So again, this is very important. So this is a respect to proxy and when it comes to the application. So before you start recording, what you have to do is play around with the application manually many times because I have faced some of these shoes. Right? Whenever I start recording in between, some of the flow might not be properly followed. In that case, again, you have to re record. So always play with the application many times with multiple sets of data and make sure you are catching the flow properly. Then you start recording. So this will save you time. And also you will understand what's going on in the application. So whenever I am playing around with the application, I always open the network tab that developer tools, and then I see what's going on for each click. Because some of the applications keep on sending some information from the server, so it never stops because of the web services. The tunnel is open between the browser and server, so I can always push the details. So in that case, you may never know when to stop the recording for a particular page. So you have to understand what's going on. Then it will be very easy for your debugging purpose. So during this phase you can identify more defects, for example, like JavaScript. So they don't compress JavaScript. So the JavaScript size might be a one B or two B. This is a potential defect. Similarly, CSS, and then we have all the font and then the PNG file logo file. So some of the developers, they don't care about this, they just push it Rad stuff and the size will be very high. So if you find this defect early, they can easily fix it and then you can easily record so the time will be reduced. So these are the things you have to take care. At least I have tested some basic points here. So apart from this, any of you has any other tips and tricks just open to a discussion.
+Sometimes it happened like let's say for an application you have ten requests out of those ten request only. Let's say eight or nine is getting captured from Loading or any other tool. Somehow that particular tool is unable to capture one of the request. This is another challenge I have faced during the recording as well.
+Okay. Got it. Yes. The commercial is yes. We have to take care of a lot of settings.
+Correct.
+Hey, Navin.
+Yes.
+Good morning. Good afternoon. Whatever it's good to have. I have a request saying that it's a good topic. And do you have any tips to see, like interview scripting? Like they make you 30 minutes to do the scripting at the Loading ergometer, which have seen nowadays. Do we have any tips?
+Interview tips.
+We already discussed interview scripting in.
+Okay, I probably have your schedule separate topic because in 30 minutes they give.
+Like you said, you may not get a time to Travers manually. Correct and you don't even know what type of correlations and everything if I can give here is enable auto correlation. It's a commercial tool or meter. He had that set apart from that follow Robe syntax and parameters. But if they want the proper script to be proper order to be placed, do you have any tips? That's what I can use on one tip from my side. I just enable it of collation in.
+I never got any coding with respect to the tool, but I got questions like analyzing the graphs. Okay, that is one thing. And coding I have got, but not with respect to tool. It is general Python coding, some data structures. Yeah, I never got anything directly for Jamie LoadRunner acoustic because I don't know after seeing the preference, they don't ask that they are going with a different thing. I don't know. Probably. I have to get some experience on that.
+Yeah, that's good. And one more thing when you're coming to the coring. So most of us do you have any suggested that, like video or training, maybe the commercial or freeware where they what are the performance sisters? Which would help, like a scripting level, like a Python shell, like basic scripting related to the performance is not in depth the so why don't you make such kind of videos? So it would be help for everyone?
+Yes, I will consider that right now I'm making one series. Probably once it is done, I will put it in the queue because that will help a lot.
+Because not for me, because I am thinking of a lot of respect to I know my team members who doesn't have the I mean, like if they think if we ask, do you know Python or shell or something? They think like in depth knowledge, but which is not required for us. You must be knowing that if you go to it like that, that would be great for everyone.
+Yes, definitely. Okay. So next tip, I am going to share this, which is again, it is kind of very critical for those who knew to headers recording headers. So I have seen many people. They always use the default settings when it comes to load or no load or any tool. So what will happen is whenever you start recording, it will capture only the default is set by the tool. But what if the developer has a custom Feder implemented in the server? So in that case the custom header will not get captured by the tool. So do you guys face this issue before on how you fixed it?
+Yes.
+When I faced and I requested the header from there. So when I show them the error, so obviously it won't go through the from load one. So they manually provided the headers. So I have very bad header function is there.
+Right.
+So we have it there.
+Correct. That is manually adding. But you can also do some kind of automation there. So if you go to recording settings and there will be a section for headers itself and you can add the custom header there itself. So unless the custom header value is something very dynamic, but if it is static, you can directly add and then you can put it in some white list. Then whenever you record something, Loader will be able to capture the custom header. This is one of the twins will save some time.
+Yeah, I have. I have one more tip. I remember recalling like there are so many so we don't remember as the one tip I recall. Like if you're playing a Flex based applications or any Java or Java or HTP based Java or protocols, this click and click the script is there?
+Right.
+And adjust protocols. If you are using such kind of protocols, these tips work for you best. Just me. You also experiment. This just minimize the browser to view two from 100 to 90 or 80 it will record all. I don't know. I cannot say there is a particular logic behind it, but it worked for me several times.
+Good that I have not tried because I use some big monitor. I never Zoom in to 56%. Hello? Navin.
+Yes, I am facing one scripting here.
+Can I have a chance to ask here in this forum we are talking about recording now. Probably one scripting section comes we can discuss. Of course. Yeah, definitely. We can take the request. No problem.
+And would you also touch base that the browser Melson options. Most of them not be using the recording browser Melson options.
+Re browser when it comes to browser again, always clear the cache cookies. So that is default one. And if you go to a true client, a true client as something very hidden settings people might not know at all. So if you go to Bin folder, there will be a true client settings itself. Will be there. There is an Exe file so that will have some advanced configuration when it comes to browser. Okay, so that is another tip. Probably you are not able to note it out. That's why I'm recording so I can refer it later. So the true client, the particular Exe file will be able to tweak your true print browser. So I don't know why load runner is not making very known to everybody. It is like we have to do some Detective job and find that then we have to tweak it. So that is one thing I have worked and the browser emulation. Usually I follow with the default settings, tune or customized unless I am facing some issue. So if you are in doubt, right? I always still be able you don't know what you are doing. Always go with the default value so that is a safer. So these are the tips you have to take care when it comes to browser and do not update the browser. Don't update anything just to keep the browser settings browser version same across during execution and testing.
+There is one more option you can while recording. There you can select the browser types. So have you done that? Kind of. I never played around that because most of them are worked through Ie because not everyone wants to go through men like Chromium or five friends please.
+So have you always my favorite browser is Firefox. So I always choose Firefox again. It depends on the compatibility. Right developer. They will tell you support one day Chromium. Then we have to Select Chromium best browser. So it depends on the application you are testing. But I go back and forth because if some issue might come only to the particular browser and you don't get the issue again in a different browser. So in that case if you want to compare if you want to debug, then you can use multiple browsers and see what's going on.
+Yeah, one more thing I think you might have forgot to mention here. Like the recording events. Right in the recording level, like in a level like like always go for a combination level.
+So with it and both years in the unit is the preparatory tool. Sorry, Microsoft preparatory protocol. That is why we design it is one of the very old protocol implementation and socket socket is kind of new again. Alden are implemented so it is the traditional legacy protocol. If you want to interact with the browser or back end, you can use the net. But I use both in case if it is one of the type is not working.
+Always better to go for a mixed one. The combined win a socket if you're missing any events in treating record again, it's only elected to load on the correct card.
+But this issue is not there in a new load. So near load I have work and then what else? Six and they will have a browser extension, so we have to interact on the browser itself. So there is no feature to record something in case. Again locust. Also, it doesn't have any recording nature feature SoC based tools. Mostly it will not have any recording features. So only the UI best tool. You have the way to capture the events. Again meter so JMeter user agitated by default proxy Port you can change it. And if you gain a meter, always go with the Firefox JMeter gels with Firefox. I have seen I never faced any issues with Firefox, but somehow the shoes might come in Chrome or other browser. So Firefox gels with JMeter and then filtering network filtering again. This is one of the people we always make them forget to turn on. They make mistakes and regular expressions. So network filtering is a very, very good feature for us is time saver. Basically it will filter out all the unwanted traffic like advertisements. It takes the particles. So only you get your application a request so that you can focus on your application alone. So whenever you open a geometer on Firefox, so Firefox automatically send some beacon. Basically for every second it will send some beacon so it will get captured by JMeter by default. So you don't want that. Otherwise you have to manually go through each and every request and delete it. So always use the regular expression based filtering. It will be very helpful for your productivity improvement. Also, all the tools support Snapper filtering a load load runner, so we can just go to the settings and then you can add your regular expression. So read with expression again. I have posted a full complete YouTube video you can go through, so it is not very hard. It is very simple rules only. So you don't spend so much time on that.
+Yeah, and one more thing I would like to add here. So if any tool like Load runner, JMeter, anything, if you're facing some missing events are getting recorded or something. Yeah, you must be. I think everyone must be knowing this again. I thought of bringing up here. So Fiddler it's service proxy tool. You can capture the events, save it and import it to your tools. So I think nowadays every tool is accepting the Fiddler based events, if at all, if you are unable to capture or missing with any options.
+So Fiddler, they got a makeover. So Fiddler now supports cross platform. So initially it was only for Windows, so now we can install Mac, another operating system so we can check it out. The latest version of Fiddler, but they have a commercial features also. So if the free version, some kind of limitations are there, but that might be suffice for our needs. So you don't need to pay for the tool. Okay, so any issues you face with respect to according to anybody, please share your views so that we can try to solve. Hi, I I think someone is talking. I don't know who is that twice is very not audible at all.
+I think she.
+It is audible, but it's very low. I'm getting a.
+Is it fine now?
+Yes, it is fine. Yes. But again, probably you have to insert properly your microphone.
+Okay, let me just put my microphone over there. Okay, so is it fine now?
+Yes, it's better.
+I just need a suggestion for the Har file. Do we have any alternate storing, like how we save the hard file from the browser? So I was just curious to play around and to come out from her file. So I was just recorded the Har file, but face a lot of issues in that.
+What kind of issues?
+The issue is like when I was just looking into it, the response was missing and some front end, like some UI component or the text was missing. If I am searching the login username text on the page and it was not visible in the network request is so.
+The hard file right? A file. So it works like a key value pair. Correct. So the hard file is generated by the browser, so whatever browser gets it will get converted into JSON format. Okay, so if you are not seeing something, then probably you may try with a different browser or you can manually compare the JSON file with your network request in the browser. So that's the only way you can see what is missing and what is not getting captured. Okay, because I never seen any issues with that, because whatever browser gets that will be converted to her. So there is no algorithm between a simple pet store website.
+A dummy website, and I just saved it as hard. And I was just searching for a text called Please Enter a username and password is text on the page. It was visible on the UI, but the same was not searched in the second.
+I think you might have saved a different request. So when you right click on the network tab, did you select the save all as Hir or save, sir?
+Yeah, I just save all and preserve the preserve. I just checked so that all the the transaction will be captured.
+Okay, then all the details should be there. If it is not there, probably you can share your screen.
+But I tried some other application. It was there. Sometimes it means it is coming intermittently. I'm not sure whether it is a part of JSON which is not handling by the or what the issue is while converting the UI into the JSON format. Something it is, I think, called Glitch of the Hart on March.
+No, it will not be definitely not be hard because it's just a conversion from one format to other format, so it will convert everything. If it is there, probably you can share your screen. You can pick me in LinkedIn. Probably. We can see. We can debug sure.
+Sure. Yeah. Thank you.
+Sure.
+So any other issues, guys? Any frequently known issues, which I might have missed?
+I even had a see, I do not come from a C background. So apologies in advance for not knowing the terms, but I do work on performance tuning of different SPS and website while doing that, I have to do a lot of load testing sometimes. So you are talking about events and recording them. We have proxy and some other things.
+Correct.
+I'm sorry I missed out a couple of parts in that.
+I.
+Would like to ask you two things. One would be what kind of event? Usually one should capture and analyze afterwards. And Secondly, let's say if it's not an app but some sort of a small website or even less, it's a large website, but it's a website only for content. There is no huge number of interactivity or a kind of peace over there. So in those cases, do you prefer to use some sort of browser automation, which is not based on UI, but mainly through script, so you can scale it better and make it automated on a regular basis without manual interacting? Or do you see that even in those cases, we should use our I'm sorry, my questions are a bit open ended. I understand that. But if you have some time and if you can spend some time on that one.
+That is when we can go the first phase question regarding events. So even when it comes to recording and testing. Right. So whatever your application based on your business transaction. So whatever the browser is sending to the back end. So everything out to capture everything.
+Okay.
+You can not miss anything, because if you miss some of the steps, the subsequent steps might file. So whatever the browser is sending, you have to capture it in your tool, whichever tool you are using. Okay, that is one thing, but it doesn't mean that you have to capture a adamant analytics. So those things, it's their particles. We can ignore that one lead to your application, for example, say Google com. So you want to test the search functionality. So Google dot com, whatever the URL has the Google dot com or Google dot com last search. So those are your in scope for you. Okay. But Advertisement at Google dot com and I'll text Google com. So these are things. It is different scope. So it will be mostly out of scope for our testing purpose. So you have to focus on which domain you are testing and its request. So these are called events, even.
+Okay. So basically that is anything that is going on in the network app, right?
+Correct. Correct.
+Okay. So does it. Is it really required to also worry about UI events? So let's say if I click a button and I have to wait for some response on that, that includes the network request. But apart from that, it also requires some client check processing, and it might delay the UI responsiveness.
+Possible that by default the tool doesn't execute JavaScript. Okay, the client side will never get captured. Say, for example, you are testing a calculator in a web page. So if you click on one plus one equals two, it will display only in the UI. It will not get captured unless there is a traffic between your clicks. Okay, it doesn't execute JavaScript load in our protocol. Website stream doesn't execute JavaScript. If you take any tool, it doesn't execute JavaScript. If you want to do some UI automation, you have to change the protocol. You have to go with a true client or can go with Element framework or selenium with the geometer. So those are your options when it comes to executing things in your browser side. Okay, does that answer your question?
+Yeah.
+Both thinking of it.
+So second ghost, what is it?
+Double second host or forgot you and I missed that. So I think my second question was around. If I want to test websites, which is not applications, what kind of testing should I do? But now, as you have already said, that mostly by event, you mean network traffic. So I already capture that as well as I capture the TCP dam through some sort of proxy. So that is already being covered. I was more inclined towards UI events, so if they matter a lot, because in my kind of work, we do have huge importance on how much responses is there in the UI. So that was something that I was automating through Puppeteer for now, but it's very limited to Chromium only. I was looking for some better solution where I can find some cross browser way to install this thing, as well as get some stable performance metrics. Because right now even Puppeteer is not stable. It's very flaky one.
+Or in your case, it would be True client. You can go with, say, play, right? I'm not sure what playwright or fled to element. So those are frameworks you might try. So True line is free anyway for up to 50 users. Again, it supports multiple browsers, so you can explore that. But if you want something open source, then you have to go with the Element or some other framework.
+Great. Thank you. Thank you.
+So any other recording is.
+Yeah. This is my first session in this clubhouse. I was trying to join it for a long time, so I have one question. Like he is like, why you always want to have this client side performance testing. So do you have any kind of suggestions? And we can go ahead with JMeter using that line based driver. That would be the right thing. Or we can go ahead with Cyprus framework. We can go ahead with Cyprus to where we need to create some auditing over upper application.
+Okay.
+First big no to meter plus helium.
+Yeah.
+From my experience, I'm telling you, it is not the right way to provide an. Yeah, you can try. If you want to try, you can try.
+But I have already tried in the past, but I was never thinking it as a purity because I don't feel that it would be doing the great things for the client side auditing part.
+The.
+Browser Loading. If you want to test some browser Loading, right, then you can have some couple of lines in that. Otherwise you want to do some into and flow. No big no to JMeter. You can. Again, as I said, right, you have to have only a couple of options on this true client and the open source. If you take an element or like a property against some limitations. And again, six. Again, it will not work for U. Again, locust. Also, it will not work for U. So we have only limited options or you can write your own JavaScript.
+Yeah, that's what I'm saying. I have recently given section on that transit performance testing using Cypress, which is a JavaScript based framework where you're using Lighthouse to do outing of your web pages. So I thought maybe someone is using the press as a framework for doing the transit performance testing.
+A element I have tried, but element also performance wise. I was reading some issues, so I dropped the exploring further. Maybe I will wait for the next version to be released. Then I will explore. But right now in this area, a lot of innovation is there. So if we have a through idea, definitely it is one of these.
+What would be our choice if I want to implement something with my company for this client side performance testing things. So what was the first choice I got? True client.
+Otherwise we have to go with the manual, one browser validation from your Lighthouse automation or Chromium to. So that is one user test you can do.
+All right.
+A true client you cannot put from 50 or 100, or I'll go with one in less than ten.
+Okay. Okay. So clients perform a testing means we are just checking the performance of one Patellar user.
+Right.
+I will not be running multiple in case of Selenium web driver. You can run it multiple, but your system will be hanged. But then the right thing to do it correct.
+A very large infrastructure to run a footprint is high for those kind of testing.
+Yeah. And one more challenge. A couple of newcomers in this performance testing. The guys when we have a few changes in the UI and you have already recorded some workflow and you have some new tab or something integrated and you're making some post call to the server. So is that kind of calls? Usually I got failed because of the new your item has been added in your post request. So I think either way for this is you need to record the scenario or you can use a file or finding out what is new item is going in the post request to the server. So I think this we need to focus every time, like what is changing in the UI in a recorded scenario. So every new Comer can take a look and the record. Use proxy tools so that will help in finding out what is the root cost. And you can then manually navigate to the browser that will help us out on this one tip from my side.
+Oh, thank you.
+Thank you.
+Before we go to scripting, I just want to give a last tip comes to recording, so always record it twice. Okay. Don't record only once and start working on the script. I will tell you why in the couple of minutes. Always record your scripted minimum two times and keep it as a backup. So always take a copy in the copy. You can work on your scripting. Okay, two times. Always remember, I go with more than two sometimes, but the minimum is two with a different test data at different time. Morning one recording. Next day another recording or morning one evening one or something like that. Always record twice. Then you start working on your copy of your script and then one more thing.
+Bring in here. So it could be helpful if I tell you people working on Java protocols. Any Java protectors always get jar files which is defined by the developers. So I face my initially like in 2013 eleven, I was working for some hotel company where the application was very old and it was to go through Java over Http protocol. So I simply gave the applications I was struggling to record. Nothing was getting regarded. So always ask for the special Jar files which is defined to regard the your application in respect of any tool. So you need to have those jar files. This is also another tip for regarding if it all if your facing any problem with the Java protocols and Flex protocol.
+Cool Java protocol. I never worked on Java protocol. So how is the performance? I said, will it have any issues? Performance overhead?
+Yes, their very legacy like they were using. If your application has a older Appleton Coles, then only we need to go. We may need to go for Java war protocols and otherwise. So nowadays a Jacks click on script or anything. So those are very old which they cannot opt out. Yeah, they are good. So what the end of a like is to converting to.
+Microwaving service.
+Good.
+Okay, moving to scripting. So yesterday I got one line message from one person so he told he never wore transcript ing, but he is being doing performance testing from past five plus years. So I was thinking, okay, what are you then? I asked them, what are you doing? So we just record. We just replay. This is what he told me. I don't know how the application validation has been done from past five year. I don't. I didn't ask him, but he was surprised actually. So how many of you? Same in the black this boat. So you never touch anything apart from recording not a boat for River Port in the years.
+Trust me, when I was in offshore I never got offered from scripting anything.
+Okay, that is crazy actually being a performance tester. At least there is some room of coding must be there. But any scenario if you take even for a simple launching the website, there is a small room to write on a couple of code. Right? So so when it comes to scripting again load on the right is C language. So again people after coming out of College again working in the C language, then you lose interest. But nowadays we have a lot of options in terms of languages. So we have Python based tool, JavaScript based tool. But then two years ago one I see Android is very raw. Right? Everything we have to write, there is no rapper. So you might lose some interest. But believe me, she is one of the best language you can learn for any kind of purpose when it comes to load runner, there are a lot of built in functions are available so you can make use of those building functions and try to write a very simple are not complex coding. A very simple coding you can get started. So that is my first advice. So for example, you want to check some status code. So it will be very simple, right? Just to put it and check for the status code. So if it is 200 or greater or less than 399, you can make the transaction as pass. So other ways. So you can just put it as an essence file. So you can start with this. Then eventually you will get some idea how to declare some string or variable sorry characters, some integers. And then you don't need to go with memory allocation. And unless you are doing something crazy, data success. So we don't need that. But try to start writing some small small snippets for all your scripts. If we are not doing it, please start doing tomorrow. So this will help you eventually for interview purpose to learn something new technology. Right? So this would be very, very helpful.
+No, I thought of adding two sense in. So as per me and experts, this is not me saying experts say the performance sister who doesn't know scripting is not a real performance sister. It is like Alphabet for us to explore. So if you know scripting very well, you will understand. I will understand. Now before going to scripting you should understand what is the flow. You should understand algorithm to make a script. So there you will get much in depth knowledge about each event, each request and everything. So I will say see if you don't know scripting. So you are not a performance sister that's what my opinion. It cannot be accessed for everyone. But you sleep the basic in India like four to five years. They won't even let you build a scenario in the controller or anywhere, unless until you do the scripting.
+Scripting is essential. So that's what I always tell my team also. So even if you are creating a very small thing, I always do some magic that. So that is one thing. And also too much of scripting. Also it is bad. So I have seen some external third party. When I do some freelancing work, they share the scripts. Right. So I've seen people, they put everything in a script, very complex logic. They'll put it and then they will say I'm not able to inject load. So again, too much of scripting. Also it is bad. And without scripting. Also you have a test plan as that is also bad. So you have to balance and mainly focus on your business. So what manipulation you are going to do with the scripting? So nowadays, right. Mainly JSON manipulation you might need to do okay. But before ten years and Jason manipulation was very not at all there. And nowadays again, if you take any tool, they have a JSON library. You can easily manipulate the JSON objects and then you can create your own JSON on the fly. Then you can send it in your payload so you can take any sample application and then you can manipulate the JSON objects. Then you can send it to the subsequent request. So start with that. Then you will get the flow. Then you can go with the advanced scenarios like file writing operations of file reading operations database from the later.
+And all these things are no need to go for any blogs or anything. Obviously, of course we can take help of experts like Navin and somebody, but everything is available in the help. Just Press F one any function they will give C example, Java example. I'm talking about load under perspective. So even I think in Metro they should be having right now I do it the better. So you can play around.
+So load dinner nowadays. Javascript also. Right. So if you're not comfortable with C, you can convert to JavaScript and then you can try to write something on JavaScript that also works. Yes. And also you can start with the CLI based tool. So if you want to really learn performance scripting, then don't go with the GUI tools. Go with Locust or six like those tools, there is no recording, there is no right. So you have to install the library and then you can get started with the scripting directly. So for that you need to have some basic knowledge about the Python. If you're going with Locust or if you want to write some JavaScript, then you have to get some basics about JavaScript. Or if you want to write a Rush language, you can Select Goose. So there are again, a lot of it based tools are there. So that would be your starting point. So how many have you used? Cl base tools? Not anything. Commercial CLI based tools. Anybody capex locust? Anybody using cat tools in the.
+No one.
+So which tool you guys use? Mostly JMeter load.
+I think ten or 20 will be a I used to need to work.
+So I have been using Visual Studio as well, which is being deprecated and we are just moving to some new tool soon.
+It's been two years. Anyway, I am following the latest development in Load in our area, but I'm not working. I loaded up nowadays. Yeah.
+There is one more tip for the new commerce. Like to join the performance team. So what do you think is record and replay is one of the wonderful assets that they have? It's like everything will go in the right way, but it will never happen. So all the newcomers need to focus more on those correlations. If something failing, then they need to identifying out all these things. So I believe that will help them out and understand. I have seen the people like they having three five years experience on there is recording the scripts and not making them dynamic and running in lots. I don't know, but I been the kind of people are everywhere, but we need to be more.
+Understanding. Everyone of the essential things you have to know must know. Actually, without that, we cannot even script the end to end business flow. There are multiple approaches you can do for correlation. So which methodology you guys use? What is your flow?
+So it's like the people using this with the studio. So what they use, they have the auto correlation happening, right? In some cases, the water correlation didn't happen. Then they used to use Fiddler just to find out traffic and what is coming in the response. And then they add their section rules on the basis. So that's what we are doing. I believe everyone is doing with some different tools. That is the only factor.
+Okay, so what kind of issues? Anybody for correlation? What kind of issues you have faced, how you solved it. Any input on that?
+I am sorry. A little late. I am not sure if you've covered this before. So is there any way to handle the clients are generated token plus JavaScript generated tokens in a load of that is a good costume?
+No, actually I have tried that, but no, I was not able to generate anything. Okay, so this one will be for authentication purpose, right?
+Correct.
+Okay. Basically how to work with the development team. And if you are adopting some AWS or whichever provider rate over provider, so we have to work with them and get the logic, then write something on your own, then on the fly you have to send the token.
+Yes. True.
+I think that's what we are implementing in our project we're there is only way to because I'll tell you why. Jmeter, JMeter or any tool, it cannot interact with the browser storage. Okay, this credential it whatever the token or something generated, it will be stored in your browser storage. So there is no way to capture that from your tool. So that is why we cannot correlate or we cannot read anything from the browser storage. So document storage. I guess this is the JavaScript call. So if you're writing something in JavaScript, if you are able to interact, then of course you can read the key value path. Otherwise it is not possible. I have done that. I am not able to do that. And then I research. And then many of you guys said that it's not possible to interact with that object. Okay, so you have to go to which they're using and implement the same logic in your code.
+Yeah.
+I never.
+Hi.
+Actually, we have an application where we need to load data into application through Excel file by uploading Excel file. Suppose for that kind of work flows what is approached for doing performance listing, whether we need to, whether we need to run the test with multiple users or as a single. I suppose. If I want to import 10,000 to one Lac records into the application, is it possible that I can do with multiple users?
+Yes, you can do it.
+But for that we need to have unit data in the Excel side. So for that we need to write the logic and then do it.
+So.
+Excellent. Sheet might be heavy. You can use something as CSV or that file so you can read the records on the fly, then you can send it in your payload. So this is what you are trying or you uploading the file itself.
+Yeah, I'm uploading the files and taking how long it takes to upload the files.
+It's uploading files, clientside activity. Right. So the performance might vary. Okay, but if you are testing with 10,000 threads, then you should have 10,000 files, I would say. Or if the file can be shared, then you can use only one file for all the 10,000 users. But you will not be testing the throughput because every user will have different, different file size. So I would suggest to have something unique files for each user.
+But then it takes like two, six minutes for the I suppose if I have, like one lack records, which I am uploading, and for that process to be for the process to complete, if it takes five to six minutes, in that case, shall I still continue with having multiple pages on the what is the file size we're talking about? File size. It will be like three MB to four MB.
+Okay. How many seconds it is taking to upload manually for uploading?
+It takes less time. But for it to post. I mean, generally there are two things. First thing is uploading the file and the second thing is posting those five under application for posting process, it would take five to six minutes.
+Have you used the Multipart Multipart requests header?
+No, I haven't.
+Okay, again, explore multipart stuff because it will split your request in the multiple parts. It will send it to the back end. That is how it should work in your application. You can check it out in the network tab so you have to adopt the same logic. No script. Ok, so multipart will have some boundary and then it will have some value unique value. So by using that it will identify the request and then it will create a tunnel. Then it will just publish your payload. Okay, so you have to adopt the same logic in your testing script. Otherwise you may not be able to achieve your objective. Okay, you either approach you guys use for file uploading like this.
+Here.
+Like you said, there's two things for uploading and processing, so you have to define the two transactions and do it. So before file uploading and the two things even in the file uploading uploading part and reading the file again, you can basic reading the part and processing the request to one in updating them. There could be a lot of sub transactions. You can have it correct.
+It depends on the application, how the design is there.
+But my question is for a single user, it is taking five to six minutes, right? When we do it with multiple users, then the system. It's kind of overloading.
+Right?
+So is it suggestible to have more users when doing this process jobs.
+So this five to six minutes you are telling to upload the file or to process that particular request to process the file. Uploading is different. Processing is different uploading or taking our processing that request processing. I'm asking a processing with then you should have a bottle link in the application side. The back end. Performance.
+Okay.
+Yeah.
+You have to start with very minimal load. That would be your right candidate. You cannot put some 10,000 on the fasten itself. No, run it with one user. Run it with five users and see the difference. Performance. See what's going on in the back end.
+Okay, bye.
+Yeah, I'll just take some small steps. I don't put the loader on the first run itself. I never do that. How you can ask your question now. Sorry.
+Actually, it's not completely related. Scripting, so generally when I'm doing execution, that is CS protocol. So I am sending one certificate to server, so it has to process and it has to give the status of certificate. But when I am doing in the load when I'm doing with multiple GPS, so with some for 50 users, it is giving an exception. Too many open files in JMeter.
+Which pattern you are adopting for OCSP, a couple of.
+SP, you are using general HTP only you are sending over and we are using the CSS part and we are using the preprocessor and we are sending we are writing some Java board which is related to certificates and important certificates and related to those jar files which are related to those certificates.
+And we are sending have you tried OS samples? Have you tried that or sampler?
+I haven't tried for this. I have tried for this is to know the status of certificate. I have tried a voice process sampler for to download certificate from the server itself. For that I use as process sampler. But for that I use for but for this I use the sources.
+Now you can do everything in the same. Why I'm telling you is if you do adopt Http, then might be complex. I mean, you can do that, but I don't prefer the Http method unless you want to test only Http way. But if you adopt a sampler, you can achieve your thing easily. That's what I'm trying to say.
+Is it?
+Yes. Can I check with the K six K six again? Gels with OCS compared to JMeter because a meter. I have faced a couple of issues. I was not able to do that, but K six I have tried it is working fine because only a couple of lines. Nothing else for the library.
+Okay, I'm almost getting 95% of pass. Only 5% are failing in CSP also. Okay, so that too many open file socket exception closed. And after that I have given this response time out to 500 milliseconds. A person got reduced but still facing issues.
+Okay. I don't know if people are testing OCSP. I'm hearing from real user of OS testing. Actually.
+It says I am doing it.
+Okay. Cool. Yeah, that is end up unique stuff, right? People never engage in that. Actually, I tested only for my learning purpose. I never tested for anything for a project. Need to know the purpose of knowing right? Then exploring OCSP. But K six you can try. You can achieve. At least you can try whether it is working fine or not. Then you can decide whether you want to go with the JMeter or six is where we need to write code.
+Right?
+I was. But at least you can just the part itself. That CSP layer. You can test it.
+Okay.
+At least you can try and see whether you are facing any issues or not. Then you can debug further. A wire might be the mistake with the issue is okay.
+But for this Ross from Meran, we can't do anything for that error, right? Maybe they have to fix from server and right to handle that.
+I don't know because I'm not an expert in OCS and never worked very deeply. Probably you may need to check in the forum.
+So the error you told about too many open files. Where are you getting this? Are you getting this from your server or your JMeter load grant itself? Where are you saying.
+Hello?
+I think you are using JMeter.
+Right.
+I'm ending Jamie only.
+And where are you seeing the letter? Is it coming from you in response?
+Jamie.
+Rachel. And what is happening is at the time the request what we are sending in post data for those address. The post data is missing in JMeter. The request body is missing for the request, which we are getting error. So we are not really able to differentiate whether it is coming from server or any JMI issue. That's what we are.
+Yes. You are the geometer load generator that you're using. Is it a Linux machine?
+Linux mission is Linux.
+So.
+Yeah. So these Linux missions, right? They have a limit. Did you try to tweak it? Did you try to increase the limit.
+Means for that one, we need to do the bus where we are running tests or that mean I have to do it?
+Yes.
+Okay. Then I will try the option one time.
+Yeah. I think default will be very low. Yeah, there will be a soft limit and there will be a hard limit. Soft limit is I guess it's one0 to four if you. I mean, you shouldn't increase it beyond some level, but you can increase it by a few thousand. And if that helps at all.
+I have gone through this link, but what I thought is maybe we have to do it at server and that's why I didn't.
+From what you said, I am guessing the issue is on the road. What is the capacity of the machine in terms of CPU course and Ram P.
+48 and Ram size is around 16 GB and you are generating for 50 users.
+Yes. And how does the response look like? Are they big, Jason?
+Or how is it response is still in encrypted form. Just it will give you some response of the OCSP status. The certificate is recent. That is the response we will get. That is an art in begin size, but we are generating use load in terms of TPS like it is around a second, only 200 requests per second.
+That's a huge load. Yeah, that's a huge load. I'm guessing the issues on the load generator site itself. So just try and tweak the limit on your load generator machine and see if it helps. Okay.
+Thank you. Thank you.
+I have a question for Soda. Our CSP testing is quite intriguing for me. How do you know the response time of OCS? Because OCSP happens mainly on service. You server machine.
+Right.
+It won't happen on your tasting machine. You will only get a socket donation time. So how do you differentiate between those things? It takes different time to connect the socket. And in that time there is some particular window for OCSP. Right. Correct me if I'm wrong.
+Oh, can you repeat? Can you repeat once?
+So my question is, how do you find out the time it is taking for OCSP? Because usually when a server response, you get timing for SSL connection that it took this many milliseconds for SSL connection. Ocs is part of that time limit, but I don't know, there is a way to find how much time it actually took, because there are other things that happen in the SSL entry apart from OCS as well. So how do you differentiate between the OCSP and other SSL and check thing?
+Actually, we are not going into that much level. What we are seeing whenever we let this OCSP request will find the server and we will get the response 200, and we will get also a response in the form of some encrypted form. And then we are considering that, but we are not going in that much the how to differentiate between. We are not going into that much level.
+Right. So basically, what you are trying to do is you are trying to load test revocation, revocation are happening or not.
+Right.
+The response from the server is that the certificate is revoked or not.
+Yes, we will get I will get that response, and it is in encrypted format. And apart from that, also, we will also get that response like 200. So based on that, and also during that hour, it will go to that particular server.
+Thank you. Thank you for playing.
+Okay.
+Any other questions or do you have not only this.
+Currently I'm working on this, only that's why.
+Okay.
+Sorry. I never worked on OCSP officially, I have no. Okay, good. So let us continue on scripting. So how many of you create reusable functions?
+So.
+Do you guys create reusable functions for your project or you just create on the flow and then you just execute?
+I do that a lot, but mostly for website performance testing. I might be doing something different from you guys. I do not do a lot of load testing on my end, but yes, we do require to keep check on websites performance from different regions on different kind of load, but not in a huge amount. But let's say from a mobile device or laptop or different kinds of devices. So because of that, we have to scale it. And that was the reason to ask you the earlier question about events and how to do it in scripts.
+So if you don't have a concept of reusable function in your team or organization, so try to initiate that because that will be very helpful and it will be a very time saver for everybody in the team. So right now, I have worked this kind of reusable framework in past couple of years. So we have a GitHub repository in the GitHub repository. What we do is if someone is creating something reusable across multiple projects, then we write the snippets there and then we store it, and then we will let everyone know there is a function is available for your purpose. So function could be anything, right? It can say, for example, you can encoding and decoding base 64. And if you don't want to use some online functionality. Right? Online library, you can write your own implementation and then you can keep that as a reusable function or converting string to, say, some other format date time format. So these are some of the examples. We have it in the repository. So it started with one, but right now we have around 30 plus reusable functions. So whenever somebody new comes to the team and they stuck with some problem, then they easily go there and rougher and they can just copy and paste in the code. So this will save huge time eventually. And you may not know right. At the end of, say, a couple of years you will have 100 plus functions. So that would be very helpful across your organization. So if you are not doing some kind of framework like this, please start doing that. It would be very helpful. Also, before you start writing anything. Right. Any tool always look out for the builtin functions, whether the particular tool has a builtin function for your needs. If it is there, try to reuse that. Otherwise you start writing your own slipped because I have seen many people, they don't aware of the built in function. They start writing their own implementation, then later they realise there is a function.
+Followers.
+So if you take a meter right, you can easily create functions and then you can share it with your team. A new load. So every tool has a feature of importing and exporting some code snippets so you can make yourself that functionality to reuse your code. So this is another scripting tip I can give you.
+We're not here. How do you create reusable functions?
+In a JMeter, you can write plugin function plugin. There is one way or you can write something groovy and then you can share it with your team. There are a couple of ways I prefer the function method because function method, it will be the new meter code.
+Okay, by using the login.
+Correct. So for example, I want to reverse the string so you can write a reverse string functionality and then put it in the sh file. So that will be there for in your system.
+Does it need support? So this will be used through that function by lock box. Right.
+Function dialog box.
+Does it need some UI component as well? In Geometer? No.
+To develop the plugin.
+In my team, we did that. Actually, we were there was a time stamp function that we had a time storm that we had to generate and the usual functions available in diameter were not useful. So we have to write a function for that and to make it reusable, we created a jar for it and then added it in the GM core itself. But we were not seeing it in the function helper dialog box.
+Ok.
+I think you might have placed the indifferent location, the jar file.
+But if I did a couple of things, but it never showed up.
+Probably I am doing this, only I create a jar type out there and then it will come up. And then I just let everybody know there is a code for this. So people download the jar from the location is one of the easiest way. Is not the best practice across your team. Probably you can exactly this. Yeah.
+Go ahead.
+God, no.
+I was saying probably Monday. Right. If you go and then you can initiate this and you can get some good feedback from your manager. Eric, stop. It will be useful for you guys. It saves time. Right. Saves a lot of time.
+And also there will be less of errors if everybody is using the same code. And if it messes up something, you just need to fix that one place. No need to do multiple versions of it.
+Yes. Because others can also enhance. Suppose you write very basic implementation. Other someone sees they can implement again, they can enhance your functionality. Right. So again, it will be like an improved process only.
+Yeah.
+Very useful for a class team. So this is one of the tips I use in my current project and also in previous projects is one thing. So apart from scripting. So usually what I do is I don't put heavy logic in my script. So that is also I tell people. So if something is very heavy logic, then put it as a separate component. Or try to reduce that execution. Because when you run with 10,000 threads or lock threads. Right. The CPU will take more time to process that heavy logic or some bad programming leads to some leak. So I always try to avoid any logic in the scripting itself. So something is to be done. I will check with the document team. Is there a way to reduce this or something I try to optimize? Otherwise I don't put anything heavy logic in my script, loader or meter. I try to avoid that. So there is another tip I can give you. Apart from this, any other tips? So you guys know anyone crying?
+Yes.
+Since you have mentioned about the time stamps, I remember the challenge. So in Load runner, is there any way we can generate the future times?
+The Unix future epoch, current time, time. I work, but future means I worked on a date and time, but the eport milliseconds. I don't remember anything. I have a future date and time. It will give you that the loader will give you that if I have to convert it using some functions to a millisecond. And.
+Sorry.
+What was that? Image loader will give you the future time. Okay. But if you want to convert into milliseconds, you have to do your own logic.
+Okay.
+Essentially some C Code will work.
+Right.
+Which will convert correct. Correct. Okay.
+So default there is nothing.
+Right. If you pass any future document to some function will not see any tool, even Geometer. Also, I will give you the current time in milliseconds.
+Ok.
+If you want the future current time in milliseconds, then you have to do a manipulation.
+Got you.
+Thanks. So you're about to say yeah.
+What I want to say is that so with every new project, we have lots of new challenges. Right. One sure shot way to understand what is happening is we have to look at the logs, for example, JMeter whatever it does, it writes whatever is happening to JMeter log. So when you face an error or issue, you just have to go there and check what is happening. There are multiple levels. Also, you can set logging levels like debug info error all that. You can adjust that to get more and more logs about the issue that you are facing. Your starting point to debug that issue should be your JMeter log or load in or log. So that is one just a small tip I wanted to share.
+Yes. Jmeter again log at different levels so you have to customize based on your need by default. I think it's in fault level. Right. So if you want to do with advanced logging, then you have to turn that particular logging level. Same goes with load runner load one. Again, they have advanced. So again, within the advice, they have three different options. So you have to just check the box, then record or replay. Then you can go through the log information. So any tool will have that logging levels based on what in four you need. You have to turn the particular option. But I do not turn on the logging doing the load testing unless you are doing some debugging.
+Exactly.
+It will eat up more disk space. So try to avoid the login for your load testing purpose.
+Yes, I did one more thing. A lot of might have faced this. So when you fix the correlation in your script which will work in a version geometer, but when you're put into the actual scenario which may not work, so does anyone face like this kind of situation I faced? And what was your face?
+Yeah, I have faced earlier. Everybody would have faced this some kind of maybe we are hurrying up, but the execution may be were not handled thing time properly. Those kind of issues might have only we have to see what's going on for each user. Then we can easily figure it out what's going on for the particular request.
+Yes. And what is your best correlation method? Anybody?
+What is manual? And I do go with manual.
+I don't do with auto in terms of methods.
+That is one thing I never. So I will have confidence. Auto correlation only after a couple of iterations for a couple of executions.
+No, I'm asking of a correlation function which way you prefer. Like I was big fat Greek fare, but now no more. I'm a big fan now. I shipped it to regular.
+Same like you. Only that was the only function available. Right then we have to regret. But nowadays we have Jason. Also we have the next path. We have different functions are there, but the regular expression will give you the flexibility of writing your own stuff and then you can easily debug. So it's not hard to write is right. You can easily design the expression and then you can test it. Even so, the meter also again, we prefer the basically I don't go with the review express an extractor. I go with CSS or something else. That's not the need. Whichever performance wise it is good. I will go with that.
+And which doesn't have this kind of filling the correlation in local and venue scenario with regrets and every other apart from the brick save right. Which doesn't have these kinds of problems. Once it's fixed, it will work everywhere.
+Everybody is correct. There is no need to have left boundary, right boundary. Again index. So that are now we are ruling out in regex.
+We could send it.
+That is also the yeah. Again, Lionel rate depends on your intuition. Correct. Sometimes we may not know. Okay, this might be the left boundary exact left boundary or right boundary. Yeah, those are the days are gone and Geometer has a lot of different options. Boundary extractor. We have we have a CSS based JSON based expert based. So again, we have a lot of options in JMeter. Also near not also adopt different framework. So near load also has a good features for correlation. So again, you get a lot of advanced correlation pets out there in no load. So that would be very helpful if you're working a near load. You also have good features for conformation.
+Sorry, it is anybody who what is the biggest logic you people implemented in script level? You think at least algorithm level. Like what kind of functionality you think it is? The most complicated functionality you implement in your script level or anyone.
+Anybody.
+As to my experience, I have one talent like I would start off sharing that one that is reading a PDF file. That is only the complicated scenario which I implemented. And yeah, that's it.
+Me. I like it a so library. We have used some library the library to read the values. Yes. Okay.
+God.
+Similarly JMeter also you can do a similar approach. I think there's some jar files there, I guess to read. Yes. So I have implemented something I have created the payload in the logic is there was no other way I have to do that. So it's like a Jason heavy long Jason. So we have to manipulate the JSON, then you have to send a custom payload. So I have done a lot of JSON related logic, like, for example, ten items in the cart. Right items you have to look ten times and keep on adding the JSON payload again, again, again with a different set of items, different set of a cat value on promo codes. So those things are complex. So that one I have done in the setting itself.
+But one of the major things I have done a similar kind of scenario. I haven't implemented the infinite loop and thought of making wanted to break the server. Thats cool.
+Any other challenges you guys use? Anybody working on very different protocol like, say, OCSP got. So apart from Http and other protocols exposed to or plan was process and also OS level.
+So.
+Yes, a voice level.
+So what kind of commands you tested?
+And actually again, it is again related certificates only. Okay, so just we need to configure the OS price sampler at the meter level. And once that is done, we can able to execute a command, prompt, commands or PowerShell commands can exclude anything. So just we need to give their invoice. You need to give you specify the working directory. And after that, in our case, what is the scenario we need to that request command is there where which will give us one new CS file means where it has this private key detail. No, you have to generate that one before actual load test. It is like a test data. For that we need to exude the strictest come in and it is like a request I for now some command will be there and we can able to achieve that one by using this OS process simpler.
+Okay, cool.
+Has a hard sorry.
+Go ahead.
+Yeah, I wanted to ask, has anyone heard of Siebel Web? It was like a ten year old technology.
+I worked in a protocol. We created a file for correlation. Like you are asking right now, what is the implementation utilities we work in 2010? That is the CPI Netherlands. Feel like BSNL. What? We work in India. That's the cap. So that CBL wave protocol. Let's keep on the correlation is a pain. So we wrote some custom code which will capture the GUI, I think long back in and I don't think they are no more using that when it's a legacy in its legacy.
+So many of my travel.
+So where are you located? In.
+Charlotte.
+So cool. Bill, nowadays the Geometer has auto correlation template. I don't know whether your meter. They have extensively support SBL correlation boundaries out of the box.
+I have worked several protocols in because when I was in India I changed the companies like my cap was one year. I kept my car for one year. I should not work more than one for any company.
+So I worked at several protocols.
+Like almost from the click on script we used to have. Right. Like OS and SQL protocols. Flex Java. Most of the time I worked into Java protocols. Okay, cool. And then it was. I'm sorry.
+No.
+We can implement LDAP also by using a.
+Supported protocol.
+Yes, I worked on that too.
+Okay, cool. I think you're always unique. So nothing on web services and probably have to write some blog articles are some media on that day. Whatever. You have got some experience.
+Yeah.
+Okay.
+I will try to do because you're keeping your knowledge yourself, not sharing it.
+Yeah, really? You should become like Navin because I'm in the house.
+Hell, I don't know.
+As you must be knowing there are better, better experience experts in the industry, but who doesn't share. So I learned my own by when I started. So I started with reading the blogs. I still remember the guys who wrote the blocks, but apart from that, they stopped writing the blogs. And after that, nowadays everybody become a commercial, even if it's a commercial that looks good. If you can write like I requested to you and create a video for video or any course for scripting languages, make it new demand, it will be useful.
+Even.
+That is a tough nowadays. Even commercial stuff to get knowledge is to identify real knowledge. That's tough.
+When I started again to 14 years ago. Very minimal resource available in the internet.
+Yes.
+That is why I started writing.
+Why?
+If I ask some dumb Costin, then people always negativity. Right? Why you're asking this? Go to your manager. Go read this. And it was not helpful. So I was very worried, actually, why people are not helping. All right. Then when I started writing the slowly get some limelight. No.
+I'm not official to say I don't feel like it's stealing. I learned geometry, everything from your post. I didn't get a car.
+Thank you.
+And there are a lot of guys who benefited from your articles and videos. I'm not assumed of saying maybe I maybe more experience than you, but. But yeah, I learned a lot of things from you and I benefit a lot. So it could be better.
+Like starting a blog is very easy.
+It's free sources and we would appreciate your time and spending the time. Right. That not everyone will have that spending the time to share knowledge. Right.
+Cool.
+So if I have a question, do we have performance engineers, discord or Slag group or Indian paternity? Thus I couldn't find any.
+I think there should be a lot of groups in WhatsApp? Whatsapp or slack.
+And when you are a part of.
+No, I am not part of any group. All our.
+Spouse.
+Definitely no one. Definitely no one wants to be part of Spam. That is why I couldn't find any proper, authentic group who talks about performance. It is accessible. Might be a good idea to start one for this particular niche because there is so much information about it. But as you are talking about that there is not enough mentorship available. And sometimes you don't require long term mentorship. But sometimes you just have a question and it's not a good material for stack overflow. You just want to ask somebody in getting started.
+There are some groups in Facebook loaded or have their own official Facebook group and a meter. Also, I have seen many groups for JMeter so that you can check it out on Facebook groups. But slack? I don't know. I've never been part of it. I think a Blaze meter. As a Slack group, you can check it out. Yes, these are the things I know, but I don't see anything on this card or Twitch. I don't know.
+Even if you follow the Tweeters, there are some podcast happening, but high level people, though, if you want to know the latest trends that I fall often perfume bites you might have come across and there are some podcasts happening.
+We have passed bites. Yes. Pass by peer performance. These are podcasts, but I am sure how much Indians, right. We don't listen to podcast much. Lena also running podcast. I think Nas the best person for.
+Yeah, I've been to one time in La gone through this past.
+So any insights on the podcast which forecast you follow? Yeah.
+Purport is the best than Pure Performance, which is run by and Grabner, right?
+Yes.
+But again, they cover very bigger topics. Smaller topics are covered by four pipes, but they do a lot of small talk. You have to be really patient to get the gist of the episode.
+Maybe I let it in the fast forward more usually on .5 X right. That will save me some time. Yes, I always watch videos also on .5 X. So that is a good productivity, really. It really saves you time. One five X always. My default setting is one in five for broadcast and videos, even my videos. Also, I watch sometimes 1.5 into eco something. Yes, those two forecaster I think Men also can follow. He interest industry leaders. What else do we have?
+I.
+Think test Guild. I think that one one.
+Linton.
+He also do a lot of podcasting and blog. I think he was a former employee of Mercury. I guess. So you get a lot of insights on micro focus tools. Usually I follow the Linux Foundation podcast and then I follow Dev two. Mostly follow the cloud container technologies and developer oriented podcast. Only very few with respective performance. Because if you follow only performance, you get only one perspective. So if we want to have a different perspective or advanced technology, or if you want to keep up with your lettuce things right, then you have to go with the different areas. You have to see it from other sides. So follow the CNC Cloud Native Computer Foundation. That one the next foundation, and then you can follow the WS as you. So everybody has podcast GCP again, they have a podcast. And if you just Google or not Google, if you search in podcast application itself, you get a lot of trends and recommendations.
+Okay.
+I'm sorry.
+Go ahead.
+Yes.
+To be specific to the one question there was, there are a few slack channels that I started which had a performance engineering them. One was started by a person called Scott Moore. He is one of the veterans and performance space. But no, that did not catch all. So people, Scott Moore had started one slack challenge.
+Okay. I don't know. Okay.
+Yeah.
+They don't get traction and they become silent over time. So as you said.
+The ones because slack is mostly blocked whenever the client. Right. So I was not able to keep it very active. So that is why I dropped that slack channel idea. I soldered my own community community sites com. But I don't market. I'm bad in marketing. I never market anything. So it is only organic traffic. Whatever search result. Right. People do a search, then they come to my website. I never go to groups or some Wat up group and post my article. I never do that. So probably I have to learn some marketing techniques.
+Learn search engine optimization.
+So I'm doing that. Most of the traffic coming from Google only and the link in it is not coming from my safe exam. I'm sharing something. Right. So it will not come from that.
+I'll tell you, this biggest marketing tip is like not marketing.
+Yes.
+That's why I'm not doing that.
+That is about biggest marketing.
+Yeah, I never do that. If they want to read something that definitely they will read if they don't want. Definitely the wrong one. Right. So I stopped doing that.
+So.
+Only the organic keywords. I just put it in my blog article and Google drives me. So right now I guess I'm 30K visitors, right? Per month. So everything is from Google. I never do anything posting something in the group and lead in green. I do.
+I was afraid. No friends. That one. So you may become commercial or.
+Yeah, once Facebook gave me some $20 credit, I used it. That's it. Apart from that, I was not into marketing.
+If one thing was good, I found like, how for me buy me a coffee, something you posted from the correct. That was a good concept.
+I started getting some contributions. I never thought people contribute, but I got some handful amount around 60 $70, I guess until now I got it. And I think commercial just putting something so that I can pay some money for my hosting provider, website hosting domain name. Right. Or some books I can buy.
+I.
+Think BA, you came to the stage. Anything to share an Hi Navin.
+I am currently doing a testing in my company, so I have a question where the first API would generate a token and the second API that has to be load tested. That token will be passed as a header so that token would get expired in one HR. I am able to handle that. And low runner like we get timestamp from init and action and then we make a difference out of it. If it is more than 50 minutes, I can go to the view that in end again. So how can we do the same implementation in JMeter? Any suggestions?
+It would be Groovy scripting for time will difference. That is one way. So you have to get the token using regular express extractor and put it in the header and then you can run your script within 1 hour.
+But the API has to be run like only like every 15 minutes. Right?
+Ten minutes.
+Yeah, because that token would expire in one house. So I have to trigger that API like every 15 minutes or 55 minutes before it gets expired. I have to get another token and pass it into the next API.
+Okay, go on. I guess I'm thinking about Groovy. Anybody has another approach so we can use like this also.
+Like you can give any response action and whenever that after 15 minutes it will fail. Right. But we have to run the token also along with our step. So whenever it fails we have to start stop freshly so that test will trigger again like that will be possible.
+While loop Tugger tacking.
+No, not by low, but what what a requirement is he has to execute that pay only one time rate for 15 minutes. If you have flexibility, run the AP ran with our API. So whenever it fails again it will fail anyway after 15 minutes. So at the time you can loop it so we can keep conditioner start next thread loop so that it will again go with Car past statements.
+But still the first time when we create a token it would be inside the loop price. So how do we create a token first and then execute it?
+There is one Sony controller right on.
+I.
+Tried that but it didn't work.
+First thing would be one one controller. You will get the token, then you run your script for 15 minutes. Right. So what Im saying is validate the token. So if something is failing, it will give you some error.
+Right.
+So if there is an error again, put another request to generate the token. Okay, so what is the duration of your test?
+I have ran it for one card. I have used one lay low runner so I know how to do that in Ronan, but my product team asked me if I can do it in a meter.
+Enter whatever they are told and one only controller you can do that easy the flop if condition or response session something definitely we can achieve this. Okay, how much time you need to run this test on one car?
+But they have planned to do Indian test also like four or something. So like we have to generate the token three times in the middle, three or four times.
+So is there any limitation to generate the token? Limitations in the sense like best many times. So you can generate unlimited right tokens.
+Yeah, but we don't want to run it all the time because we are not going to load test that anyway. We just need the token for every.
+I was just thinking that if you have that flexibility like that, whenever it gets failed, just go to there and trigger it and get it. That's it. It's a logic and giving those.
+Yes, I got you have to implement it on your own.
+Otherwise, use multiple thread groups in one thread. Go keep this token.
+And I actually tried that where I create two three groups in the first group, I give that token API, and then I give a thing time for like 15 minutes and I set a property there for the token, and then I use it in the second thread group using get property. But it didn't work.
+Now you have to use interpret controller inter controller. The group default RGB will not work.
+Even with the set property, it will work.
+Actually, you mean that communications. Okay, I haven't tried that. That is the last option left.
+A property will work, but if it is not working, then interpret.
+No, it actually didn't work. I just did the same as it is given in the tutorial. But the Saturn get property didn't work.
+Said property will work. Actually, I tried it.
+Property should work. I probably should work. Or you can take it or some file that is so.
+But why don't you make it simple? Like whenever you need a token to submit there, just go and get it and submit to avoid the complexity.
+But how she knows when to submit? That's the problem.
+No.
+Where each request whenever she needs to submit the token in separate API. So go there and get generated and get it. Right. So like that it will be fresh every time you need not to worry whether it's expired or anything. Your API obviously won't take more than 15 minutes response time. That's the worst case scenario. So whenever you need a token for API, just go there and get it as to avoid. If you want to avoid this complexity, that's what I see.
+But how do I. How do we add the token in the middle of execution?
+No, not in the middle of execution. Just you can add in the first question the first of the thread. Look, whenever it fails, you can loop it from the first start the thread loop so that it will fail only after 15 minutes. Right. So again, it will go from first and it will refresh one so that again it will start from the load test like that it will be. There is no limitation on that token.
+Yeah, instead of that, I thought of putting the simple things. Just add your token generators weakest as the first. Capture the token and submit it as a correlation parameter into the second API. That's it as simple as that.
+But I don't want to run the token for testing.
+That is the point. If you don't have that in, if you're okay with that, it's okay if any conditions not to run include that one as part of low test. Yeah, you have to go better complexity like Anne.
+I think said property should work. I don't know why he said property is not working for you.
+Ten but when I use get the token is getting passed as a null value.
+I don't know why the second the group maybe you are passing the wrong.
+Yeah, it might be some implementation. A small mistake on it should be probably out of debt. Maybe get some third party a third Ie right? Probably they can help you out.
+Yeah. Okay, thanks.
+You can post it in my community website wordly. I can check it out.
+Okay, but one thing I thought of highlighting her ban. So as per Sudan's logic. So if you are executing the second AP, whatever your load testing if the test fails again, you are stopping the thread and going back and searching for the new trend, don't you think? Which will have the impact on the response time?
+I.
+Have one.
+You have to exclude this one. Keep that in mind. So this operation what you are including going back to that thread and getting the fresh token. So you have to exclude from the response time. If you want to figure it out, that a plane actual response time.
+Just keep that in mind that we are able to do that very smoothly. Right? We don't have that past time in the middle between triggering that token API.
+Okay, I don't know why you're comparing one with totally to you should never compare. Tools never compare. Yeah, people have to stop comparing tools open.
+I want to know how it can be implemented in a meter.
+Each tool how it works is different, right? You should not compare. Okay, so why he is getting more salt than me. Will you compare? Alright, if you never compare yourself to others. Likewise tools don't compare it.
+Okay.
+Now when somebody came JMeter give very response time than there was always competition. The other comparison is it is not because of comparison.
+We use low runner only, but the product team they are not using or they are not into performance testing. So they are trying with JMeter. So like one guy came and asked me how can we increment Jason James? Because we want to run it for 4 hours and we don't know how to, you know, get the token again. We can run it only for maximum one HR and then it's failing. So it's not for my project. We are using lower on us. So we didn't have problems. It's a question from the product team.
+Yes, you can simply suggest them if it's lower environment testing. If it's not security related, just ask them to increase the token time out. Simple.
+Some token we can have the validity for 30 days. But some token, we cannot change it. It is only for 1 hour.
+It's for testing for this. Right. So you could request if it's possible.
+It's a token is from a different a.
+Gateway or something.
+Yeah, but it is totally possible. It is possible.
+Okay. I'll try that out at property and get property.
+Okay.
+Now I'm also in a similar scenario. Right. I'm facing it. So how I'm doing that? Right. With the help of a controller and counter counter ment, we have it. Right. So what I am doing, right? I mean, counter, I'm starting from zero, because whenever we run this success, we have our foot model defined.
+Right.
+And we know how many transactions it made in an hour. So even my case also, it's a 1 hour duration of the token. So what I am doing right. If it is making around 100 times sections in another when when it is at 90 or 80, I'm making it with the counter, you can put it at zero and you can give a big number.
+Right.
+And increment it by one. So anyway, it starts with a zero. Right. And put a controller there. If controllers controller with like I mean, if you want a generator to 90 90 multiple, it will trigger in the controller. You can put this token, whatever it was generated. This token.
+Right.
+So that's how I'm doing it, because mine is an actor. So after have some limitations. So it can't support more than 600 requests per minute. So that's why we want to implement I'm doing in this.
+Yeah, time even I will try that out. Thanks.
+I also done that sets property with one thread group. We can do that. But I feel this was easy, just with the help of a controller and counter element.
+Okay.
+If you have a proper design workload model, right. I mean, this will work. I mean, none of my tests are failing. I mean, from last one year onwards, I'm running even $8 test is Iran with nearly a bunch of load, nearly 600 700 RPS. But none of us got fat due to the system.
+How do you generate the token for the first time? If you have it.
+It'S a counter is initiated from a zero, and in the if condition, you put it coming every 90th iteration. If you want to put it counter, the percentile 90, the remainder will come. Gerrit is anything but zero device.
+A second time we are giving the token. So initially we have to give one token rice to run the API. So after 15 minutes, it has to reset again. But how do we give it for the first time?
+Yeah, that's what I'm saying. Initiate counter from zero. And in the if condition, you put it counter divided by N in the 50 minutes. How many transactions you made it? If I made it 100 just for just for a good purpose, it you can put it some maybe 1020 transactions less because we are initiating from a zero, right? So I mean, in the control table, zero equal to zero, it will come. You put the like come in counter divided by if it is 80, right? 80 be equal to zero. So you are making it equal to zero to zero, so it will come.
+So what he's saying is right, start with zero itself. It will generate. You are talking. Then everything depends on the counter value, right?
+Yes. Yes.
+Okay, so the first token would be for counter zero. And then according to the counter value we can generate.
+The preacher is one problem, one performance problem. We can see whenever you use. If controller writes when you are going back into multiple RPS because I went nearly 506 hundred RPS. So there is some performance degradation might happen. I mean, the excution time it will take so that you need to take here. That's not only one thing I see. Okay, so without that, if controller and Wii controller see, my workload model didn't match because it is taking some competition that I mean, every time, I mean, that you need to give some extra timing set for the game computation.
+Okay, so I'll try that out. Thanks.
+That's it. It's been 2 hours. So thanks, everyone for your participation. So next week, we'll have Artic from Chaos Native. It will be as engineering topic. So please join and have a good weekend. And again, thank you. And please share this group with your friends. See you then. See you next week.
+Thank you.
+Thank you. Bye.
+I for one.
