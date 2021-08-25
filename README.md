@@ -28,6 +28,7 @@ Clubhouse is now open to all, here is the [direct link](https://www.clubhouse.co
 | Aug 07 2021 - 11.00 AM EST | Realistic Load Testing - Guest Speaker: Nicole van der Hoeven  | [Join](https://www.clubhouse.com/join/performance-engineers/guivekjO/m2j1DzDq) |
 | Aug 14 2021 - 11.00 AM EST | Recording and Scripting Challenges  | [Join](https://www.clubhouse.com/join/performance-engineers/H10OB0zQ/PY4Y3AdO) |
 | Aug 21 2021 - 11.00 AM EST | Evolution of Chaos Engineering - Guest Speaker: Karthik Satchitanand  | [Join](https://www.clubhouse.com/join/performance-engineers/mVMWveXd/xpXlkNLq) |
+| Aug 28 2021 - 11.30 AM EST | JMeter Productivity Hacks  | [Join](https://www.clubhouse.com/join/performance-engineers/hJoe3lox/myw40NBe) |
 
 # 📽 Recordings
 
