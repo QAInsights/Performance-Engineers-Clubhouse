@@ -1,0 +1,472 @@
+Hi everyone. Good morning. Good afternoon. Good evening, wherever you are. So let us wait for a couple of minutes and then we can get started with today's session. So those who want to take part in the discussion, please raise your hand. I will admit you to the stage. It is late for one more minute and then we can get started.
+Okay.
+Thank you everyone for joining this club meeting. This is our session from past almost two months. We've been discussing about various topics and today we are going to discuss about Jeter productivity hacks. So how can you expedite the process of scripting execution, result analysis and some tips and clicks about JMeter. So we are going to discuss that and this session is being recorded. So I'm using an app called the Backstage. So this session will be hosted in the YouTube by today end of day. So if you want to watch again, you can just go to my YouTube channel. Key Insights. So let us talk about JMeter so meter. I think in the next couple of weeks we will have a new version. Jmeter five five will be released particular soon. But in that release I don't see any new features as there is no major change or major new features. But most of the things will be like bug fixes and some improvements. So you can just watch out for my blog. And also I will publish a video once the 05:05 is released. So I hope everyone is using five four one. So that is the latest stable version. So my first tip will be as you know, it always we should use the lettuce oversell no matter what. Try to update your meter to the latest stable version because it will have a lot of performance improvements and it will have a lot of fixes and also new features. So these three reasons you have to follow. Whenever you go to any project, just make sure you're using the latest version of a meter. Because I have seen people using still using a product or something. I have seen two one three. Also people are using even till date. That is totally around. Actually we have to use always the latest version. And I would like to know which Java version you are using. So any input I can get on that. So what version of Java you will use for JMeter? Anybody?
+So mostly it's Java eight nine we used to use in our ten years.
+Okay, anybody from the audience, let me admit a couple of folks, please raise your hand. If you are new to club, please raise your hand so that I can admit to the stage which version you will be using. A Java version of Geometer eleven a eleven. Okay, cool. I have worked for many clients enterprise Fortune 100 clients. Most of them they use Java eight only because they don't upgrade to Java eleven anytime soon because it's very stable in production. In my client machine. One. I use Java, but in my personal recordings and experiments I used letters. Personal Java. I think Java counting also is going to release pretty much. I think I use Java 15. I use Open JDK flavor. So again, there are different flavors you can use. So I use open JDK, but it's up to you which flavor you want to use so you can use. There are flavors to Microsoft.
+So for me it's the same for official purpose, wherever it is. We used to use Java, but in my personal attributes, Java eleven itself.
+Okay, so I prefer Open JDK, but people will have their own personal preference. They can go for Oracle or Microsoft or Amazon or Azul. So again, there are a lot of flavors available which are flavor of JDK you can use. You can just use it. So JMeter will work on any flavors. And once I download the zip file, usually what I do is I delete all the documents help folder from the zip file. So that is my practice. I don't know how many of you follow that because that will save some space in the machines. And also when you run some CCDs pipeline. Right. That particular machine will have only some limitations in terms of disc. So just to save that, I usually delete all the inane stuff from the zip file. So I have one shelf file so it will download and then it will just delete that if element five. So do you guys do that? Anybody delete the unwanted stuff from the zip folder?
+No. Sh.
+Okay, probably you can start using that mainly the docs folder. We don't need that actually. And help we don't need. And then sample Max file from the zip file, so we don't need that. So that takes space when you run in a right. So we can delete that once you download the file.
+Okay, so this might improve our geometer performance using right?
+No, it will not improve JMeter performance. It will save some disk space disk.
+Okay.
+Got it discusses because once you extract the zip file. Right. It will be very heavy to more than 100 and true. So you will save some space in the remote machines.
+So.
+I have one shell script. I don't know. Either I can see or not. I created for my client purpose, so it will automatically optimize the folder.
+It.
+Will customize the properties file. So we have different properties file. We have system properties, we have user properties, we have report that property. So there are so many properties, I think four to five properties file. You can see it in the bin folder. So what I do is whatever properties I use for my project, I just create my custom properties and then I just put it in the bin folder. So this also will save time instead of manually going there and changing everything. So I will have one property file which will be used across my projects. So you can just a group together everything into one, and then you can just use that property file again. This also will be very helpful for CCD purpose. So you can associate the property in your command line. So if you Google it, you can get the exact command to associate the property, which will be useful for a CCD automation. So there's another tip I can give you. And apart from this, the recording recording again is very, very critical phase.
+Right.
+But now we start with any project, mainly if you are working in a web application testing, then we have to start with recording recording again. There will be a lot of issues you will face. So one of the issues again, my SSL certificate. So the SSL certificate. If you want to record something Https, then you have to generate the certificate. So by default, JMeter will generate only for seven days. I don't know how many of you seen that message, so it will valid only for seven days. So if you want to extend the duration, you need to change some of the properties in the JMeter properties file. So usually I put some 365 days which will generate the certificate for one year. And then I will install the certificate in my certificate store. So whenever you try to record something, if it is generating for seven days, go to the properties file and did that particular number of days to say one year or two years so that you don't need to change every now and then. Let me admit a few folks here. Hi, not Hi. Can you able to hear me? Yes, please. Go ahead.
+You told her that certificate, this is for our remote.
+So when we want to run load testing for 6 hours or 7 hours.
+But at that time.
+Also we can use this certificate.
+This certificate I'm talking about for Https recording, not the remote distribution. Okay. If you want to record Google dot com. Right. Which is stats.
+Correct.
+So if you want to record it properly, you should have the proper certificate installed in your local. Because JMeter access a proxy. Right. When you start your recording, it will access a proxy. The proxy needs certificate to negotiate with the server. Okay, we need to have the valid certificate installed. Otherwise it cannot record. You can still record, but it will not capture the Http traffic. It will capture only Http.
+Okay. Okay.
+Thank you.
+The certificate in the certificate we need to download from application.
+Right.
+That whatever it is this is for recording. See, basically JMeter access a proxy.
+Okay.
+When you start recording. Right. So the proxy needs to negotiate properly with the server. So I'm not talking about your server application, a certicate, a meter as a broker. Right. Broker needs to negotiate with the server, so it needs a valid certificate to capture the traffic. Okay, so if you go to bin folder. You can see that JMeter certified.
+Yes.
+We need to set it up for the yes.
+Apache JMeter CRT. If you double click it, it will ask you to install the certificate where you want to install. So you have to install and the poster store.
+Yes. Okay.
+That will expire by default after seven days. So we have to extend the duration. Okay. So many of us. I mean, it's a rookie mistake. Even. I also sometimes do that because I just start and then it will not capture anything. Then again, I have to debug a whether the certificate is expired or not. So it's a very common mistake we do. That is why I always go with one year or two years of rotation.
+I.
+Mean, just one question related to that property file which you mentioned just before that certificate topic. So use it like we can move. We can have a single file having all the properties. So how JMeter will identify which properties file meter will have to pick it all.
+So if you have to mention so you will launch JMeter bit. Right. That file. So you have to have that property using there's a command line argument you have to add that will associate the property. Okay.
+Got it.
+Otherwise it will take from the default properties.
+Right. Right.
+That's why asking.
+Okay.
+So that will give some flexibility. Mainly you are running in the CAD pipelines locally. You can do whatever you want. There's nothing in money to follow that. But whatever I'm telling is for high volume test and regression test, CD test. So for those things to be very helpful. Okay.
+So.
+This is what I do for recording. Mainly that the certificate generation. You have to take care and then I don't really care about the transactions. So those things is up to your personal preference. If you want to name the transaction however you want, you can name it. But we follow some standards. I like to something or something our business transaction name or project name. So you can follow your own naming conventions to name the transaction request. So it's up to the project and personal preference. So that is another thing where you can organize properly. So always give some name to your transactions. Otherwise it will be by default. It'll add some number underscore one underscore two, so it's very hard to navigate. And also when it comes to a sorry to interrupt.
+Here just one question. We were talking about certificates. I usually run my script as such whenever I'm using any Http request, but I was asked one question in an interview and I write about it on Internet as well about some client side certificates for security purpose. Some security certificates. Can you tell me a little about it? What are the security certificates that we need to add in our script?
+And it is usually see some of the application. Right. We need to install the certificate. Otherwise you cannot interact with the application because of the secured nature. So at that time, you have to proceed the certificate. Usually I get it from development team, and then they will give some password also. So you have to put it in your bin folder and you can install a new local also. And then when JMeter write in meter, if you go to Tools menu, there are options to import the certificate. Okay, so if you import the certificate, it will prompt you to enter the password. And if it is a wide password, then it will install it for JMeter so that meter can talk to the application. Otherwise you cannot interact.
+Okay, I got your answer. So the one way of adding it is through Tools and adding the certificate. And the second way of inputting it in which file is system or properties file.
+No, you don't need to put anything in the file. Are you talking about locally or somewhere else?
+Okay, so it serves the same purpose. I believe the authentication does. There's some authentication we use in our request. User ID and password. If it does the same purpose.
+No authentication. You put it in your JMeter test plan or some user defined variables. Right. You put it there?
+Yeah. I get how we do it in a meter. I was just asking about the purpose of adding the certificates for the security reasons. As you said, security and not able to access the application without that certificate.
+Correct? Correct. Correct. Mainly to access the application, we have to install that.
+Okay. Thank you so much. That answered migration. Thank you so much.
+I sure.
+No problem.
+It's like a credit certificate. Like the.
+Sorry. What you mean certificate?
+What is it that security certificate. Key certificate for? Sometimes we need to install, for example, we have a testing. So that time the developers provide some security certificate and key certificate. Re.
+Re.
+Re.
+Yeah.
+Some of the applications.
+Right.
+They will have some additional layer to interact. That is why they give that artifacts to us.
+Okay. Thank you.
+Yeah.
+I see an option of import from Curl. Is that the correct option? How important?
+No, it is not. Actually, that is a Curl command. That is different.
+Okay.
+I'm not in front of computer. Probably. I can tell you later. I can message you. Okay. So when it comes to recording, mainly face is used. With respect to certificates, it depends on a case by case. Right. You might need to configure some additional properties. So it depends on the application you're working. But if you have any questions. Right. Important thing is you have to talk to the development team or you are a develops. Case were deployed.
+Certificate.
+Sorry. Deploy the application.
+Right.
+They will be able to help you out. Okay. So any other tips you guys ask for recording any issues you face or anyone?
+Ten. What are the challenges we are facing? I like recording the cloud applications getting more difficult. No disk to any solutions for that. So I'm doing some testing assure redirection is only not happening from one page one Azure authentication to next the landing page. So I normally eat properly when I record through meter the issues like it does not read directly in the browser.
+Okay, a couple of things. One is how many times the reduction happens, but when we have to figure it out. Ok, by default, meter handles only. I don't know the number, but it handles only some limit for directions. So I have seen a unit. They have multiple redirection. One redirection will cost another redirection keeps going up to four to five layers.
+Yeah.
+So in that case, I would prefer to manually add the request to Geometer. Okay, so you have to capture the redirect from your network Chrome developer tools, then if Geometer is not able to capture during recording, then you have to manually add those redirects to your test plan. I think it mainly happens for authentication, right? Yes, only for authentication is always challenging when it comes to like Azure AWS because they will have multiple reactions on the single sign on and what kind of authentication they are using right over to one or 02:00 a.m.. So again, the various mechanisms are there. For each mechanism, you have to adopt a different different strategy. For a one, you have to sign that particular key. So you have to use the signature SDK in AWS. So you have to use that a little bit complicated. So that is why I always ask. The team removed the art layer. And let give a one landing page where I can access the login page directly. Sometimes it is very tough to programmatically do that. So we remove that authentication anyway in cloud and all it goes authentication and the solution like four Ad and the Ad also they have their own authentication GCP. Also they have their own authentication layer. So I always ask, okay, give me one page where I can land directly and give the credentials. So that approach you can take. Or if there's no other way, then you have to manually capture that. Then you have to add it in your game plan so it will be a little complicated. I understand it is complicated because I have worked on a couple of applications on that so you can use there are a couple of extensions are available for Sam. There is an extension in Chrome. Also you can just Google. That extension will tell you that the same token is getting generated so you can easily identify that talking information. Then you can correlate in JMeter directly. So instead of searching manually where the token is getting generated, you can use the extensions so that will highlight you where it is getting generated. So there are a little bit of pics and tips. You can just Google it. You will get some information.
+Sure, sure. Thank you.
+So much.
+Yeah.
+Okay.
+Let me admit a couple of folks.
+Hi.
+Good morning.
+Hi.
+Now, I'm sorry I am late.
+No problem. We are just discussing getting started.
+Yeah, I have one question. Maybe a little bit related to JMeter.
+Yeah, sure.
+But it's not completely a sticking to the topic you are discussing today. So I have one question. General question, like in diameter if you are going for CAD, like CCD performance listing, continuous integration code development and continuous performance listing. So what is the risk factor that like, you will cover all the tests and will also monitor what level you can monitor. Like if there is any memory leaks happen. So geometer always the reports which will give. Okay, all SLAs are good. You are done. Go to release. What is the risk factor there?
+So that is the only one question I have apart from the usually I get only response time. That is the main thing. But memory leaks. And again, we have to manually de day.
+Yeah. So that's what I thought. Like, so we cannot always cover all those tests in CCD, right?
+No, there are tools there to automatically take a dump, right? Whenever there is from violation. We can do that. But usually I do the regression load testing basically.
+Help me to understand. Once the developers give the bill, Jenkin will deploy the bill. Once Jenkins will kick start your JMeter test. Let's say the regression, the integration is good, then it will trigger for the stress or scalability or endurance. So that's what I'm understanding my thinking. But I'm not involved in that kind of testing here. So everything is done.
+It will apply automatically.
+Apply to the road.
+That's what right. If production one moment actually production. Deployment. Right? That is continuous deployment. Head. When I meant what is meant, is it integration company is development. We can say what is it? Another term. I forgot the term. Okay, what are you the production, right? That is deployment. That is continuous deployment. I'm not talking about a deployment. Is delivery.
+Sorry.
+Continuous delivery means we are not going to fraud. We are just stopping before fraud.
+So cool. Because Jenkins triggering everything.
+Right?
+So what is your old?
+So my role is to monitor the outcome of the execution daily, whatever you are executing.
+Right?
+I just want to monitor whether there is a violation in yesterday's run and last week's run. I just compare two metrics. It's only right. A 03:00. I assume the 03:00 every day I'm running my test automatically, so it will send me a message in Microsoft teams. These are the transactions we executed today and this is the response time. Okay. And then it will give you the C response time in another column and last week's response time in another column. And it will just highlight what is the red or green? That's it.
+Okay, so basically helping you to start it.
+That's it. Correct. Start and give them a report and anybody can see that report. And if something is wrong, everything is failing. Then manually just go to dinner and see what's going on.
+Okay.
+But what our usage? It is possible to automate. It needs more. Again, we have to have eleven set of tools, we have to write some sales scripts and then we can implement that.
+But still, this fact is more.
+Right?
+Say so when you say when you're comparing the yesterday's bill in today's build, are they going to be a pro or it's going to be in your stick to your stage performance environment.
+Stage a stage only manual product. Manual deployment.
+Got it.
+So.
+It just triggered automatically from there as well.
+We have not reached it. Actually, eventually we have to go reach there. But most of the organizations I have worked manual deployment only every day they do. But it's a manual deploy. You're about to tell something.
+Right.
+Sorry I interrupted. What was that? Ok, thank you.
+Yeah, but still. But if everything is automated, there is a risk factor right now. So every day of deployment happening, what is when you will be getting the time to completely thoroughly checking the performance testing.
+Correct.
+That is also there is too much automation also.
+But yeah, that's what I worked most of them. Like I said, I'm into micro services. See, monolithic testing is different and individual testing is different. That is only the big ask again, if you want to automate to identify the back end micro services which are utilizing and their functionality itself is like the ocean. If you automate this, it will chaos like anything. So that proposal my manager is strictly denying. So I thought of having that discussion here.
+Okay, whatever. I get. It very simple. It forward. Nothing fancy here, but I have seen people who create last client I worked a week created a pipeline. It will automatically rise a zero ticket. So if there is a violation rate, it automatically send an API call to zero. It will create a ticket, and then it will assign the respective team. So we have implemented a similar thing in my previous client. So we implemented it depends on what you want.
+Basics like response time when you say valuation.
+Response to us, not the other CPU or memory. Cpu memory also will watch it, but it automatically trigger the others from diaries. So something goes wrong. My interest will show you the problems and alerts.
+Okay. Got it.
+It depends on what you want to achieve. What do you need them you can design.
+Okay. Anyway, that proposal has denied here because I it depends on the app level as well. What is based on the necessity of work they want to process if they want to automate everything. That depends. But still, there is a respect. There is more in the CIC into performance. That's why we had a proposal and it has stopped. Okay, cool. That's for. Thanks, Nevin.
+No problem. Are you still there?
+Yes.
+Tell me you are about to tell something, right? I interrupted. So what was that?
+Actually, I missed that one.
+Now do you think you are about to tell something is actually did mail you or build a comparison.
+Also, when you want to compare current build results with previous for that purpose, it will use mainly.
+So anybody in the team, like any laser, anyone working it kind of environment like Cidade ploy ment and triggering the performance bill. Anybody would be if they share their experience to mainly we can figure that one any time.
+Mainly that is the purpose and build comparison. So if you want to start our test midnight so we can set up all those things engine games.
+Yeah. How about a deployment? Is it automated production? Deployment?
+Deployment means deployment means in what for the production.
+That means means in production and is asking like in CC, you compare the bill and let's say it's good. So how it went forward to be in production? That's what he's asking. I think probably anybody really working on that CAC pipeline triggering their performance listing in our audience. If they shared that their experience, it would be more realistic. I guess.
+He said our team is also working on same and we are also working on continuous integration and continuous development only. As worker said the deployment is manual to production, but the main motive of it is to compare the results with previous bills and against various thresholds that buyers in the bills. So that's the current pace we are running as of now. But there are various things that need to be put in in the bill to make the bill ready to be moved to be automatically moved to the production. So in my experience, also we have one continuous integration and then comparing the bills with the previous one.
+Yeah.
+Thanks. How about apart from response times? What are the metrics you're Martin? Like Navin also said CPU memory from Dino to Abdi. Apart from that, what kind of threshold you set for BioPerine these things on the CPU memory.
+Response times and setting alerts involving for that.
+So how about script maintenance and any changes? How do you do it? I generally would you explain what is your role in CCD performance system?
+Yes. So our role is basically to create the bill Jenkins build for the let's say I am triggering the JMeter script from it. So I create a parameterized JMeter script and I'll invoke that script in a Jenkins build, I'll create a build and I'll share it with the DevOps team. Devops team will include that build in the Jenkins pipeline that is going to be triggered. So my job as a performance test, it is to create a build that can trigger my JMeter script from there and then and that has various threshold levels in it that compares the current bill to the previous bill. So my role is not integrating the build into the pipeline is the job of the DevOps.
+However, after the test results, that's also your role, right? Like comparing.
+So there's a section in the build where you can trigger mails in mails. You can add your analysis or whatever how you consider your mail to emails. We are currently have the option of HTML report viewing, so we get the mails whenever the ball is triggered and we can check the mails and the HTML report email. So that's how we do it as of now.
+Okay, thanks. You have things.
+You can configure your mail completely according to your requirement. Whatever information you want to view about the bill, you can completely configure the mail according to your needs.
+Okay. How about the rest of the tests? Have you ever done? There is a chance. Okay, so these tests need to be covered carry five apart from the regression test. So do you have that feasibility as well?
+What?
+I understand your question now.
+How about the scope of other tests like stress endurance tests to find out the our scalability test such kind.
+So I believe the metrics would change there and then the current. When I say parameterized build, there's a parameter for test duration as well that we have created. The test duration, however, is the load and what is sometimes the developer needs to run for, let's say the host name changes. So there are various parameters. Test duration is one, but we usually run it for one. The performance has be run for one of we've never tried for So run, but I believe for Sopron the same build would not be compatible. Please correct me again if I'm wrong there because the results for Son are a little different as to the normal runs that we do. One execution run 1 hour execution. It completely depends on how the car, how the cache is being used in the run, and what sort of data. So I believe the threshold would differ a little that runs in for a normal execution.
+That's true. But what?
+I have not yet covered a SoCon in the Jenkins build. Okay, the SoCon would definitely be. I believe it would be need basis and I don't see a need of in involving it in a CIC pipeline.
+Got it. Can you answer my question? So that's what I was thinking about actually into Ruby and Rails project. I have this deceived Jenkins in 2013 itself calling the LoadRunner scripts, but that is for the POC purposes. After that, I never touched into CID. Yeah, thanks. There's a lot information. Thanks.
+A okay, thank you. Let us go back to Jamie Depot hacks. We have deviated a little bit. That's fine.
+I'm sorry for that.
+No problem. Anyway, just about a meter.
+No, thanks.
+Okay, so next we can talk about how we can optimize the JMeter test plan. So usually what my ex is it eventually we had a lot of elements to JMeter. So and we forget to disable. Right? So always try to disable all the listeners, all the assertions, all the unnecessary stuff. Duplications. So nothing should be there apart from your project or application. The demons. So everything you have to disable basically delete everything. You don't need anything for your load testing purpose. So if you add a session I'm not right. I will add more CPU and it will take more time to process. So you don't need that. Delete all the irrelevant stuff from your JMeter test plan and keep it very short as much as possible. Okay, so don't add anything unnecessary. And also when it comes to third party plugins. So before you use any plugins, go to the GitHub repository of the plugin and see what is the age of the GitHub repository and it is active or not, how many issues are open and if there are more number of issues, read the issues and make sure it is not impacting your test. So I have seen people, they blindly install plug in whatever they want and at the end of the day it will not work properly. And again, we have to rework. So if you are using plugins, do this research past for a couple of hours and install the plugin and make sure you inform your team everybody. So on. So plugin has been installed. And please, if you open the script, please try to install the plugins. So we have a Kitab repository in my project. So usually whenever someone adds some plugin, they update the repository so that people will know. Okay, these are the plugin you have to install before opening the script, so this will bring some good hygiene to the project. Otherwise everybody install their own plugins and it will be a mix and match. And eventually the script might be character or you might get lost. So always install only the relevant plugins for your project every day. There are new new plugins are coming up, so you have to just keep a tab on that and make sure you use only the stable ones. Okay, so how many of you develop plugins? Anybody develop plugin for JMeter? Any experience on that? Any developer for JMeter? Not a group.
+I started looking into your video, but Lavender process. I'll let you know what.
+Okay, I started developing on plugin, but is hanging around again. I have to assume that. Yeah, I have some couple of ideas in mind. I have to resume play. Once I get time, I have to develop some plugins. Any plugins you developed? No. Okay, plugin again. It saves time, but also it brings some of the disadvantage. So make sure you do it properly. Otherwise it isn't necessary for your scripting bumpers and also try to implement the function instead of developing plugins. If it is possible to create some functions, you can easily created. Custom functions. I'm not talking about a meter built in functions. Custom function for example, if you want to say reverse a string, right? So it is not there. So if you want to implement some kind of small, small utility, then you can easily create the custom functions. So I have created a couple of functions I think I have posted in my Git repository. You can check it out. So it is very easy to create functions instead of plugins. So when it comes to development, J meter doesn't have any documentation. Even if you do a Google search for one week or so. Right. You don't get any help on developing plugins unless you are a core Java developer. So I'm telling now itself. So if you're trying to develop some plugins better to learn Java first at least spend a couple of weeks on Java, then come to a development site of JMeter. So this will save you a lot of time again for geometer functions. Also, you need a little bit of experience how to read the code in JMeter, but again it will take some base, then only you can develop the functions. And before developing functions again, usually what I do is I go to the built in functions and see whether a similar functionality has been done or not. And also I do a quick search in GitHub or Git Lab repository because some of the developers what they do, they develop plugins, but they don't publish in the official repository. So if you do a quick search in Git Lab or GitHub, then Orbit backed.
+Right.
+You get some idea, then you can make yourself the same file in your project. So this also will save a lot of time. I have seen many plugins which is not there in the official repository, so you can follow this process for your project work and make sure the code is proper. Nothing you are sharing with the other party, so you have to quickly go through the code also. And by default, whenever you install plugins some statistics, it will send the usage statistics. I don't know how many of you seen that, so you can turn off that particular sharing the stacks. So it is like how many plugins are using, how many installations you are doing, how many times you download. So this kind of information will be sent to the backend meter plug into the website. So if you want to stop that, you have to change the properties file so that you don't share your data to them. So always I do that. Any software, any software install. I try to save my Privacy, so I always disable the usage statistics sharing. So you can also follow that. And when it comes to.
+Interest, for example, you develop X Y, is it plugin for JMeter? How will they approve and publish to the official meter?
+So you have to submit a pull request to the geometer plugins repository in GitHub, and you need to follow certain best practices and process. So you have to submit some JSON payload with all the information and you have to map it to the right repository. Whichever repository has the code and the reviewers right, they will go through. And nothing is a species. Nothing is secure device. Everything is good or not. Then they will approve it. Then once it is approved, it will automatically show up in the plugin manager.
+Okay. Thank you. It will take a couple of days to get an A because you do that of that plugin. That's right.
+Okay. And if you're looking in a corporate network, whenever you try to install plugins, you might face issues that the plugin might not get downloaded properly. It's not even open the interface. So in the case you have to go to the properties file and you have to add your proxy information. So if you are on a corporate network, you have to add the proxy.
+Thank you.
+Yeah.
+This also will be the proxy settings. Also will be very helpful if you're launching JMeter and trying to access some Google dot com from your carpet network. So proxy always plays a critical role when it comes to our company network. So always try to add the proxy and give the username and password. Then you can launch Geometer to access the internet. Otherwise it will not work. So this is about a meter plugins and functions. So anybody has any input on these two various plugins and functions? Any input which plugin you use for the country. So which plugin is very, very helpful for you? A rich plugin is not good. A lot of defects. Any input on that? Anybody any interesting plugins you have come across?
+S s one collector.
+In which one?
+Yes, it's one collector.
+Okay.
+Okay. That's my.
+So it will collect directly if you use sand pre command. So it will give you directly server level code level information, CPU and memory information in graphical view. That is very good plugin.
+Oh, cool. So it works only for X box, X box Linux server.
+So it will give directly core level in the graphical view.
+Okay. Any plugin or similar for Windows, we have person.
+Right.
+So that one.
+Character the Windows we have to install agent in server so that it will collect a matrix or Windows Server.
+See?
+So there is an in one as well, which I used long back. Why don't you create a plugin to call in on? So it will directly give the results and do in one format, and you have to import into excellent rules and give you how about that idea?
+So can you view some light on one?
+So it's like basically per month. So it's a reality. We have to install into the server. So once I start, you have to give in one command. So it will be collecting all the matrix. Once it is done, it will give you give you the data on extension file. Then you need to analyze with the with the Excel utility, which is also from no. So it will give you the ten detail crops everything.
+It is only for network.
+But some companies have restrictions on that to you.
+And on another completely the server, the Linux server CP claim everything processed JVM level, how many agents are running and what is it? Input output everything. This guy it's like a lot of lot of metrics in.
+But some companies have restrictions. So in that case, we have to go with some DJ meter default one how I use it as a model.
+This is a you can use one more sample that was poster using that one. Also, you can Carson statistics as well as even you can capture a report if required. It can run some batch commands in that one process to inject.
+Right.
+So that one you can like perform using the OS process sampler. That is like you can invoke any third party tools using that sampler and you can run your coming. That is also one good thing if you go through, come to another.
+So I have a question here, mother. So if you're using a very high volume test, like a thousand or 10,000 tracks, so how that OS process will take care of that load a huge volume.
+Yeah. In that time, what we have to do, you know, in my case, what I have done, so I am not actually integrated that way for me with that whatever volume I am injecting for 10,000 or 10 million records per hour if I'm going to put a load.
+Right.
+So you have to select and update a load generator machine where you run only with the statistics you have to capture in one. You can add your I suppose you have to capture eight JMX Port and details for that one. So you can use that to process template. And as I said, it AW reports. So you can capture using that one. So as you said that if you integrate with that one, it again, due to these things, it should not exhaust that login commercial.
+So basically we have to run with one thread of a sampler in the particular machine, then another script for the load.
+Correct?
+Yeah. Okay. Go ahead, sir, please.
+So that red will trigger this. Whatever reports you want the report level in one level and you have the options to which how many millisecond interval you need to collect the Prem results and metrics. And you can also give the duration from there. The report will be the normal process to triggering that report. I think the one sampler process process he has mentioned that you can use that.
+You can actually not from. You can run the command said even for Win state command. Also you can using these. For example, earlier Mon Electric application, you can see you have around eight to ten application server. So you have to capture the eight to ten application server. We start as well as in more detail. Again, when you start the load, test it before we used to go each and every no one one for TV how to invoke and then we use to capture. So instead doing that one, you can put everything in 1 meter only so you can add around eight OS process template and you can trigger a it will save a lot of time.
+Okay.
+Got it. Thanks mate for sharing that. Also, we can use OS sample for OCS right now.
+If you want to exude some command command from command prompt, or if you want to exclude some PowerShell commands you can use to process samples.
+So you're using your return a custom script for SP or use voice sampler.
+For example, only used commands by using that.
+Okay, that will be very easy. We right?
+Yes, it's easy.
+Way to 1 second we have to contact for CSP from Soda. Okay. I will kind of decision because many people they don't work on OCS. I have seen pretty new to the or you can give one person on that eventually I will give on CSP and voice process samples. Okay. So we can conduct some Zoom session. Right. So that we can see visually we can touch base.
+Okay.
+Thank you.
+Re.
+Any other plug ins? Interesting plugin. Recently I have come across the right tail detector. Anybody using the plugin? Right. Tail detector. So basically it will just clean up your statistics, like outliers. So those things that will just take up so you can just give a try. It's very simple plugin, I think. Fancy. So we can just check it out will be useful for web application and also web services. Performance listing.
+I.
+Have a question, is there any sample for LG metric collection like in general? I don't know if people will monitor the LG health or not.
+So is there any sample in such a way I can perform an S on right. We can use the same sample.
+Okay. Are you people monitor comment that LG health as well.
+How is the if you run in command command mode. So if you give if you are facing any issues in and it will give general mainly out of member issues. Other than that, we won't get much use if we want.
+Okay. Got it.
+Yes. Cpu monitor. Basically, I just see it as not exceeding more than 70 percentage also. But again, just periodically I just check what's the usage? That's it. So if you just hit some top command, right, it will automatically show you.
+Right.
+So I just go to some random instance and then I just check everything is signed or not. So that is one thing we do, but commercial tools automatically. It will give you the statistics like me or load on our right. It will give you the host metrics mean LG post those things. You can see it automatically. This is the beauty of commercial tools, right? You get some additional features like this? Yes. Okay. What else can we attach with the plugin functions? Okay. Http sampler. Http sampler. So what kind of it is you guys have for TTP sampler? So usually I always check the resources. So if you go to Advanced tab, there is a section to download the embed resources. Whenever I test the ecommerce websites, I usually check that box and then I try to retrieve the resources. So that will give you the somewhat very high response time. If you're not Unchecking, if you are Unchecking, that. So there are differences.
+Right.
+So I think we had a class from Nicole on August 7.
+Right.
+The realistic load testing at that time. Also, we have discussed this. So whenever you test the web application in meter, always go to the Advanced tab and check that box. Embedded resources. This will download the CSS file, JavaScript file, PNG logo file font, so everything it will get downloaded. And then you can simulate the browser like a scenario that will give you a somewhat realistic measure mode. So always try to embed that particular resources. Whenever you work in the web application means it will act like a synchronous.
+Right?
+Like parallel requests.
+Correct.
+Exactly. Correct. That will show you the high response time. If you Uncheck that, you will get a good response because JMeter will not download the resource, then it will show you only the server posting time, so you will get two different response times. This is very helpful to compare between the website posing on how the browser will load. So it's not exactly Apple to Apple comparison, but it tries to behave like a browser, but it's not actually a browser. That's a beauty.
+Always means you can use the option always or any specific to application we have to use. Otherwise, as per client requirement.
+It would be how it would be.
+So usually I checked that box when I work on the web applications. The UA performance, basically the browser performance.
+Right.
+So I checked that box. But if it is a web service, you don't really need to check that. Okay. And also whenever you actually another implementation.
+Right.
+If you go to the Advanced tab, that is an implementation. Http implementation. So I always go with the default implementation. Always default http. Do not go with the Java one. So Java one has a bottle neck because of the JVM, so don't select the Java. Always go with the http for implementation so that people sometimes they change and then they forgot, they forget. Right. Then under the high load, you may see some issues. I am dating government. Maybe due to that Java bin dinner, it might be. I don't know. It depends on the application you're working. Okay. You can go with the default domain, which is TTP four. Okay. And do not change anything like a connection time and another time out. Right? So don't change anything. Go with the default property. Whatever properties file they have defined, always go with the default values. So I always tell people who come to me. Right. If you are not sure, always go with the default values. So that is the best way to handle that kind of scenario. And if you have time, you can just Google and learn more about the property. But if you are no doubt go with the default properties. Always.
+Yes.
+Okay.
+Let me just talk about execution. So how you guys do execution? I'm not talking about load testing, like debugging or some simple smoke testing. So how you guys do any inputs? I can decode it from that area. Execution.
+Can you repeat one?
+Yeah. Normal debugging. How you guys debug JMeter script like a small snack test.
+So any input under debug means we will do by using Debug sampler. We will run with some minimum number of users and minimum iterations by using result.
+In that way we can do debug in a log log level. Yes. Log level also be helpful. And Blaze Meter has a plug in. I don't know how many of you use for debugging. Have you used that plugin anybody step by step or debugger step by step for debugger? Yeah, I read about that.
+It's like F ten we use in loudness.
+Very helpful. Yes. Please go ahead.
+How I will do right. I will find that traffic to site and I just put that into the pan so that I can pass each register one by one so I can know what's going on, how these things will be working.
+Okay.
+Okay.
+Okay.
+Any other way.
+You can also use debug post process, which will be available in the post process area. So if you want to debug for any particular request, whether our core correlated capture value is capturing or not, we can use that also debug post process.
+Okay. Yeah. Debut post process. So in JMeter file file the two release, right. That they have improved that debug sampler and Debug post process. So there are some improvements made, so you can also check it out once it is, at least. So it should be very helpful. So I have seen that new feature. No, actually, I have published already a blog I published, but it is not released. I just published the head so you can check it out in my blog. I already put some screen shot one how the new feature works. So usually what I do is whenever I want to dial date right, right click on the thread group and my select will date. And how many of you do that? But that is the best way. I will quickly validate the script, so no need to change anything in the third group or a loop count. Right time. Nothing. Just right click on the third group. Validate it will run for one user without anything time. So that is one of the best ways to validate quickly your script.
+How about transaction control? You people use a transaction control for transaction response time or all the time?
+I use it all the time because expert like you suggested only transaction control to use transaction because we need to measure a set of strips.
+Right.
+So we always put into the transaction like a log in or do something like a search, transactions, transfer money, some kind of transaction we want to measure.
+We always put it in that transaction controller for complicated scenarios.
+And so usually what I do, I create a sub transaction. Basically I will have one parent transaction, and within the transaction I create multiple sub transactions because we do not know any time somebody a product owner or architect, they will change their mind. Then they will ask, okay, give me the total response time or give me one subset response time. So instead of going back and forth, usually what I do is create a master transaction. And within the master transaction I will have many trial transactions.
+So.
+That will save some time without going back and forth. So no, it also has the same thing. Right? Sub transaction contract.
+Same approach only for visual. It will be clear Meriden see out and see it and more Diggin.
+Correct.
+Okay. So this is about debugging on log level log level. Usually I go with the default log level, but if you want to deep dive into some before going to Hitler or some other dates. Right? So usually what I do is turn on a very high pricing whenever I change it, and then I just run with one nitration and see what's going on in that particular request. So that will give more insight to your http, custom response. So that also you can follow by changing the log level. But again, once you change, you have to revert it. Otherwise it necessarily log everything. So low level also be very helpful. And what is the next important thing we do in JMeter about some results results we can discuss now. So before that were going to result any other you need any input that I can.
+Have you ever used this JSR 33 to 23 the pre post poster holiday I used for certificate purpose one time.
+But is there any extra features from the if you want to send me some custom requests, you can write something in this groovy or if you want to update some headers or if you want to process something. Right? The custom needs everything grew by only all the time. So all the custom coding always two to three subject.
+So I have a scenario where I face a situation where I need to capture enter response. I have some five values, but while generating a request, I need to replace only 50 value at this time. So in this scenario we have to use Groovy with our mental preprocessor and we have to where our results.
+So all the payload customization manipulation, right? Is two to three, for example. Jason, right. Jason, if you want to account Jason, then the so two to 300. So for example, I want to send some five customer details in one. So so that customer details would come from previous request so you cannot parameterize them. Right. So you have to write some JSON using Jason slapper. We have to write some coding, then you have to send it to the payload.
+Yeah. Makes sense. I have a similar kind of scenario, like each card will have multiple tokens when I need to send manually.
+Probably I can give yeah, we cannot parametric those kind of things. So again, two to three again. So no need to be an expert. Even I am not an expert in Groovy, so I just Google and what things need to be done. I just decided some high level logic. I just write it. So grow again is a big topic, right? We are not a Groovy developers. We're just scripting and grey.
+So.
+As a basic question for Geometer, what in the script language we need like a Banshee and GUI you mentioned we need not to be expected apart from Minshall and Groovy. Is there any other things we can beans it will update soon.
+So there's no point in learning bean shell. Okay, probably if you want to maintain the world scripts, if you want to update your knowledge. Right. Then you can run Benson because JMeter community they don't recommend being as a language. They recommend growing. Okay, because of the performance improvements. So Groovy it will have very high performance. But being you don't get if you want to inject from high load, then Vince is not a candidate. You need to write in Groovy again JMeter community. They don't support the JavaScript also. So do not use JavaScript in your JMeter. Try to avoid JavaScript is not a very high performance language.
+Your.
+Grow a second is a thanks.
+Thanks. Okay.
+Never ever JavaScript JavaScript at all. Wherever for performance testing and never performance listing comes to our JavaScript. Okay. And then I met so don't implement anything on that because after a few releases. Right? You don't see being as an option. Okay, that is my regulation. After two to three years, you don't get the bin sampler one option in jam at all. They're completely replaced with Grey. Who knows? Something new comes up.
+Right.
+So the new language might take a place instead of injure.
+Now you can also write code in the Python you can write.
+But that is again eating your food like other way around. Right. Have you tried that one?
+I added that Python engine and I haven't tried, but there is option available. If somebody is comfortable writing Python coding Python.
+They can yes, Python of its possible, but performance wise it will be slow.
+Yeah, you can use it when the load is not very high.
+Correct.
+And you want to achieve something very simple. There a few lines, you can achieve something.
+Right.
+Then right on is the best approach, but you have to install that jar file. It that particular Python. That's the thing you have installed in library. Then you can write it in the Python runs.
+One more thing is some of all the libraries it won't support. It all the packages in Python Python won't support. Right. So it's the first.
+Yes, we can. You speak to install. So if you install something S or Pandas. So really? I don't know. We cannot do that, I guess. Right. Yeah.
+Right.
+Okay.
+It's a very lightweight Port of Python.
+Yeah.
+By default libraries, you can use whatever Python comes with the default libraries, you can use that. But a custom library, I think that would be a way, but out of the box, I don't see any support. Yes, please go ahead.
+So recently what it is, just maybe somebody might have tried also vs writer. So I just use the VTP and to update the parameters in two tables so it's still freely available. Right.
+Correct.
+So if somebody has a specific thing that you can try it also for my thing, the scenario is I'm trying them from micro reassessing and these guys need the correlation ID. It is taking a longer time from the events that so to log the correlation adds. I try to usually with the fire writing for a fancy thing. I just moved to this video.
+So you capture the correlation ID and then you put it in VTS.
+On the APA services. They use it to the correlation ID site for monitoring site. So that even in correlation IDs and tried two VT esentially tried the ETS UI commands. Then later on I got the VTS documentation. So which was much helpful in writing the complete row and do so if anyone wants to write, probably I can travel.
+So instead of writing to some file, you put it in the VTS. Okay, go. So that will be expired. Whatever you write, it will expire eventually. Or it will be start. It will be there forever. The value will be there.
+But we can clean up the table at the end of the test by right clicking it or something like that.
+No, the talk and whatever you write the ID so that will expire that value. Whatever you write, will it work forever?
+No, it will be expired. But that's only for the tracking. Right. So if I give a correlation ID to the developer for more on, they will run the log analysis and they can drive the correlation is and they can be able to find it out. Which where is the bottom line? Whether it's in A or any, even listeners is causing the problem. Something like that. A yes, we can write commerce operator. We can write it just for a fancy thing.
+By using GUI, you can write it to log. That would be easy.
+Yeah. File is much simpler I just a.
+Three step one open right?
+Close.
+Right.
+Good. So.
+Do you know how it got named two to three? Any idea anybody? E 22322 three some Java service.
+I don't know why two to three.
+Okay. Java specification request, but its reform of so basically if you have any idea right for improved Java technology, you can go to that JCP Java community process. So you can go to the website and then you can propose your idea and the team right here in the chair they are in one number. So it would be like safe or four or three or five something like that. They are saying some numbers. So I two to three is the feature request for the scripting, basically. So that is why that name SR two to three. So that 220 the request to improve the Java technology. That is why the name SR two to three. So there are so many you can go to the website, you can find out how many ideas. There are a lot of things. They are submitted. So it will go under review and it will go under voting. And once it is approved, then it will be maintained and some of the requests also will be retired. I think so two to three also will be retired because nowadays Java comes with its own scripting platform. I think JL is there if you open so you can write some scripts there. And we also have a groovy. So there are different implementations they have done for scripting. So we can just go to the website and then you can find a lot of information.
+So.
+The two to three also comes with a pre pre and post power. So again, there are three variants, sampler, repose, post prose. So for each two to three. Again, the variables, whatever variables you use, right. That also will vary. So you have to be very careful where you are writing the code. As I usually I don't care about as I never use. It's a bad way of writing program meter.
+Okay.
+Yeah. Because it takes a lot of resources when it comes to high volume testing. So I always try to avoid if you ask me, I never use so.
+I use it remove for test data we need to have to use some time. Situations will come for test data. Want to store it to some fast files into some file and fail into another situation will come where we have to use the session as but can we use Groovy for the but we need to validate it with SR two three session only. We need to validate them.
+No two to three. That the correction.
+Yes, it is. Ruby only is okay.
+Yeah.
+I usually try to avoid 9% try to avoid assessment any assessment I try to avoid because Jamie documented yourself.
+Right?
+If you see a session, we keep on reading a lot of places they mentioned. They do not disable this for load testing is a lot of notes they have. People usually don't spend much time on documentation. We miss out those details, so we can go to that. Read all the boxes. The small, small boxes, they are put in different colors. If you read that, we'll get a lot of insights.
+I mean, there are cases where even if the response code is 200, you would have failed. In such cases, a sessions become important.
+That's why I try to implement those kind of checks in. So that's what I'm trying to say. So I read the response response. Whatever thing comes from the server. Right. I try to validate from my S two to three. So instead of adding the session, a session will be easy. Right. You can just check for the text our code to be very simple configuration, one click configuration. But for very high volume test that is not feasible. You cannot afford to lose your resource for that.
+So.
+Instead you can write some if condition in a two to three, which will be very affordable for high volume. That's what I'm trying to say. Yeah.
+Okay. My question is around Jason extractor Jason slapper like Jason extractor with the Nighty one available meter. Jason Slipper is like we met red the probe code. We can store the adjacent response season file and use it. Which one will be better right now? I am using both of them. No.
+You can use if you want very high performance rate, you can go with James path.
+Oh.
+Yeah. Because if you read compare Jason Path versus James part James But has some better improvements, both as improvements but compared to Jason but James but has some more additional features and performance importance.
+So.
+You can try to use Game Path and see run your high volume test and see any issues you are getting yet. The difference. Yeah, but difference, right. If you compare Jason part James, the difference might be negligible. We cannot even see or make it, but there are improvements have been done in games. That is why they added the game math library to JMeter and for the advance in Texas if you are looking in a Jason.
+Right. Definitely. I faced a lot of problems in writing advanced extraction. That means I can locate a child and then I need to go back to the parent or based on two to three our conditions and conditions. It was a bit tough and there is not much space available. Finally managed it. But one more thing is the recent JSON post section supports extraction of keys. There's the value. Pass it. But that thing doesn't work in five three. I'm not sure about five four ID.
+But that was not working in five three because the library is the outdated version rate. And but if you don't want to use any expected again, you can write your JSON server.
+That's the only that's what I'm doing right now. I start off asking except area.
+Yeah, but for complex, always use GameSpot. For example, I can give right. If you want to find a maximum age out of ten customers and then how do you write something in Jason extractor? You can write it, but again, you have to write some logic. Okay, compare find the biggest number from the output.
+Right.
+But if you use James Park, there is a function for identifying Max simple one line of code, so that will give some flexibility. You can easily achieve something pretty quickly and also performance as also it is good. So you don't need to write anything on Jason Loper James.
+But is it coming out of the box with JMeter or is it a plug in?
+It is out of the box.
+Nice reason I no.
+It is there from a couple of releases I have seen James when it rates like James an expression language. And if you go to that website, you can see a lot of examples which will help you to write the expression. And so you can pipe it. So that is the beauty of gym stuff, right? If you want to get some output and send it as another thing to the input again, process that output again input. So you can also pipe that your thing. So that is also another advantage of James bath.
+So.
+You can write everything in one line, one line, you can write it. Take a Max again filter by some requirements. Again, filter that so you can do a lot of stuff in one line, just like writing a Grep command in Linux. Okay, so these are the things I want to share with comes to scripting other things can. Now let us talk about the results. So how many of you automated the results that merging and preparing some HTML report? Something like that.
+So any automation you guys have done on that in my company we use to send to Ghana recently. Now we are sending into elastic search only for flexibility. We have no elastic already, so we send the RAF under high load. It becomes it itself starts using a lot of CPU. So we moved to a.
+Any other process for the house? Anybody. So anybody generates raw data or in geometer? Anybody generate HTML report? Any issues? You guys faced the default stream of ebook because I have seen a couple of issues recently in JMeter HTML report. Mainly the aggregation has some issues.
+Percentile anybody has faced any issues on that pressing the in the sense like when I read my Prometheus through Matrix in Ravana and that numbers were not matching with the Man report. Not a major happens though, but it's not exactly always matching.
+Okay. Yeah, usually the problem will have always all the time. Aggregation might have some issues or it will not match with the actual value. Right. So that is why I always don't generate anything locally. We've always published to Gravano Prometheus from property dashboard. And also I compared with dining trace or anemic so whatever APM tools you use, it's always good to compare those two and see where the time being spent, which is high, which is less. So that will give some insight. Anybody face that kind of is a very high response time in JMeter, but low response time in diners. Anybody feel the issues?
+I.
+Got it. But I know that that's the problem with my load generator memory settings. I didn't over eat in a new road gene data and I got the thing, but not exactly for the report generation.
+Because too many variables to consider, I understand. But usually you also face this issue. Response will be high, but actual production deployment or in theatres.
+Right.
+It will not show you anything like very less response time, debug everything, all the aspects from JMeter, Java and geometers and how the script has been done. Thing time facing. Right. So there a lot of variables. You have to start from the top and debug everything, because this would be some usual interview questions. I have seen many people ask this question in interviews. Okay. Why? There is a difference on which metrics you consider for the sign off. Right. So these are things they last usually.
+So what is answer then? So generally even Abd level as well. I see not much difference though, but a little bit less response time.
+Yeah, negligible negligible defence will be there always that I observe.
+But not used to a huge means.
+Again, we have to deep dive and we have to make sure to meter is not the problem for that. So we have to rule out the meter factor by deep diving into a meter. Then finally they will come always to write the entry. Only the income PM. Personally, the architects or pro development team. Right. They don't consider a tool issue, so they go with the Dyna tries most of the time.
+So you would say that the scenario design is one part which will scenario design the way how we inject up the load.
+Right. Or some kind of performance issues might be there in JMeter site. Also, some open defect might be there, but we might not aware. I know.
+Don't you log the meter transaction specifically into the genetics, like adding that we can tag it.
+We can tag it is we can tag it and then we can see what's going on in the particular tag information.
+Okay.
+Just no meat. Just to add some dietary header, then it will easily track.
+Okay.
+But I don't know how many of us are really doing that in project. I use near load. So near load and loaded as a builtin integration with the diner. So it's just a one click option.
+So to automatically send all the gas to the address I used to do, but when I started moving my own environment so I won't be doing the performance transactions there is no state.
+Okay, for JMeter again, I have written a simple Groovy script. You can check my repository so that Groovy script will automatically inject the Dinaric header information and all the requests with some unique request number so that you can easily price it in directories so you can use it for a dynamics.
+I'll also give one more tip which will be helpful for everyone. So what I did like so in the Splunk clocks. Right. So there is always mismatch up nodes, sharing different different environments and logging your transaction to identify. So I injected my name as a like sender host name as my name. You can edit out that one. So that is also one tip. You can identify your transaction only your pants. Let's say to the car. So the occur. One, two, three is your transaction number. You can add it locker post name. Send the hostname in your headers requested so that you can identify. No need to go for any extra headers heading to identify whether in diner, trace or plant. There is also a tip. Recently I involved in a lot of people.
+A.
+Good yeah, usually the whole thing. Right. I usually don't generate anything locally. I always publish it to some third party dashboard. So that will store everything. What is the best practice? Like Gran from some other tool, whatever tool you're comfortable. So anybody run game test in a doctor environment or cabernets? Anybody.
+Not in Kubert.
+Okay, so Doc, do you use Docker swam? Just a doctor container.
+Just containers on. I might try for the PC, but right now not using that.
+So it will just execute the script and then it will store the results. That's it.
+Yeah. So at the end of execution, right. I just move the files back into my local machine and you map your volume in. Okay, so the map my volley and do that. Then one other thing I got struck is consider configuring the RMI key store. So the Valentia glitches were there then once it started working, then it's kind of a box. So now I am not at all bothered about that.
+So you run a distributed testing in Docker, right? How many containers you use?
+I used to have three or four containers only.
+Okay.
+And everything is one machine or different machines.
+Right? Its runtime. It will deploy the containers from my shore and it will destroy after copying it.
+So for instance, for Docker containers.
+Right.
+Okay.
+So you also monitor other or the containers how you did the monitoring.
+For monitoring. I have the Prometheus data things also. So that is sending me sending the metrics from the darker host, how much memory is available and it is a bit for itself. So the road generator monitoring. I can do it through the primitive thing.
+So let me give my example. Now in what I played, I think it could be helpful here. So similar kind of situation. We used to have a PC environment like Privata Con Foundry in local. So proposal came to more Micro services to the Cuban Nites so one of the micro service. So I have done testing with LoadRunner in the Con Foundry. There is no issue, but say Micro service, I have to do it in Cubes. So problem I face, there was like the PEM form, the PEM certificate, which they give from my service perspective, which was not working in Cuber nets. In the Cuber nets, they reply to Micro Services. They gave me the Pfile file, which was not recognized by the server when I'm sending through the load in a script. So I ended up taking the key file and used in 22 33 and Med JMeter script since it's a symbol. One micro service. Right. So I exited that meter script into the throw load on her and the monitoring part I have monitored through App dynamics. The Cuban it is.
+Okay, cool. So that the script will be stored in poetry or local.
+Which one JMeter script? Local only.
+No.
+We don't have the top CD CD processor in something.
+So.
+Anyhow the geometer things you manage locally or it will be a positive.
+So I am managing it bit pocket, but it's kind of a manual upload at the end of the day, just checking back in to bit bucket.
+That's okay. And everything will be in one folder.
+Yes, everything will be in one folder.
+One. Okay. Under multiple, somebody wants to work, they have to just check out and take the letters on. Then they can work on.
+Right.
+Okay.
+One question. What is the need to adopt a Docker for noticing?
+Not really. So they don't want to have the VM always on. So the traditional thing is we have 05:00 a.m. Earlier, they want to cut down the cost. So this is like her right now. I have one VM for scripting or all my local activities. Then whenever I want to run, I just deployed this VF automatically an issue. And at the end of the test that all the Docker containers will be destroyed, so it won't be always on. Right. So that might have cost savings. Okay.
+We try to do the same exercise in my organization. What we observe is running metal process directly on a VM versus running them in Docker containers. Locker container is using a lot of memory, so we had to provision a bigger machine to run with containers, so we skip that idea.
+Okay.
+Now we just break up the entire so we have some 35 scripts, so we break up that into seven script Max test suites, run them parallel, trigger them parallel on the same machine. It still works. I mean, it will be like seven Java processes are running on the same machine, and the memory usage is very low as compared to if you're turning on Docker.
+So.
+Just adding a real for your question. Right. Why? We need a doctor.
+Right.
+So in my team, sometimes the development team, they want to execute some test. Okay, so what we've done is just a simple URL testing. So we do rise with one JMeter script. Very simple JMeter script. And we have parameters everything in the properties file. And then we gave that image to them so they can configure the properties and then they can run the test on their own. That is one use case I can give you when you say property.
+It'S the geometer property file.
+Jmt properties URL number. After it, they want to configure a thing time. So those things are in properties and Doc race image, and he just has to open the properties in a volume. That's it.
+They can run the test and that and the container comes up in their local. Or you have provisioned to run in some cloud.
+A local local, just not high volume test just under grade, just to baseline some number.
+Yeah.
+Hey, Brunel, you are telling like it was playing more memory without using talker. Would you explain a bit more why utilizing more memory? But you are using Bulk 45 script something, right?
+Yeah. With Docker containers, the memory utilization was high because Docker itself needs some memory to run whatever is inside it.
+Right?
+The container itself needs some memory. That was an additional overhead for us.
+Okay, but can you customize the memory units for the Docker?
+And to see what we had to do was we had to run on one large machine. We picked a very large machine with 64 course 120 08:00 p.m.. And on top of that, we wanted to bring up five containers and run seven scripts in each container. So we did both. We did seven. We brought a file containers, each having seven trips. And we directly ran those five scripts, each having 7 meters on directly on the machine. So the second approach used lesser memory. The Docker itself needs some amount of memory for it to work.
+So directly running the mission. So you think it won't consume much memory, right?
+I mean, compared to locker, there was a huge difference for us to more to the second approach.
+Got it.
+I may use it.
+Okay. Cool.
+Okay, guys, 90 minutes over. So let us conclude this. So anybody has any other tips to share so the community. Otherwise, we can wind up. So this system will be available on my YouTube channel so we can check it out. Any last few words, anybody.
+So is this the last session? Like I haven't seen you get published for is it?
+No, son, I am planning. Actually, I'm waiting for the guest speakers to give their time. That is why I have not scheduled anything in GitHub repository. I'm waiting for the approval. Once they say yes, that will be seen. Of course, if somebody is not turning up, then we can talk about something else.
+Generally, if you want to construct paper scripts, so what we will do. I will manually doing now in Postman option to directly record by using proxy. Everyone knows about it.
+Yeah, you can run a low test from but mostly I'm doing it manually. Even the UI. But also I am doing it manually. But just reading that a network or Fiddler.
+I'm just converting that into actually now for postman. So we have direct regarding option by using proxy. So just like our web browsers, we do need to construct manually for APS. You can record just like web browser web applications for APS. Also in postman, just simply through Conferring Proximate Port. Just like our web browsers so that it will directly capture the API details in the geometers. So it will save our timing.
+Okay, I have not tried that. Probably I can try today.
+Yes, it will work.
+Okay. I can try with something in a video here.
+Yes, it will save a lot of time, actually.
+Okay.
+Sometimes we end up how to Portage with Postman and Jamie Rae. But now that issue is all good.
+But there are a lot of converters. I have seen postman to JMeter. I don't know whether you already know about this. So how different is that?
+But it is quite easy.
+Okay, probably I have to explore that. I will check it out, but there are plans. Online tools are available. Like if you go to load stuff comes so they have a converter postman two meter. Yeah, and me. Also, if you enter a Swagger link, it automatically give up to create everything for you. So just one click it will come whatever thing.
+Okay, good.
+But it'll come work. But the rest of the thing we have to take it is not fully automated. Rest of the things we have to add extraction. We have to do it manually, so manual effort will always be there. So somehow it will save our time. So not 100 percentage.
+But recording will save our time.
+Yeah, recording for me for it. If somebody is using Fiddler to generate your things, there is a way there is some Madden called the Mocking Bad so that it will connect us with the MX five.
+Mocking Mad.
+Mocking Bad. Mocking Bad.
+Mocking Bad. Okay, breaking benefit of Breaking Bad right then.
+But that should be always a manual effort to clean up his record.
+But he can't do okay marking bad.
+Okay, so when you convert this one so which controller and sample it will convert it.
+It will go to http, sampler it won't have a.
+Yeah, mostly TDP. Right. Everybody has so any website. What is the website name? I'm mocking Bad website in.
+Let me try it right now.
+I just Googled. I am getting some other lyrics of in bad converter.
+Yeah is going to stack overflow somewhere in Telerik forums. It's there. I'll probably send you the link on LinkedIn.
+Probably you can try in Jarius, Australia. And even because they wrote this kind of Stuff slot.
+Okay, I Google in GitHub.
+That's where men are more.
+Repository. Okay, I'll check it out. Thank you. Okay, everyone, thank you for joining today's session. If it will be available on YouTube, so please check it out. So next week, I will come up with some topic, and then we can talk about that. Thanks, everyone. Have a good night then. Thank you. Thank you.
+Thank you.
+Thank you.
