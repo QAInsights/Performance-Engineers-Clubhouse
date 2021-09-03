@@ -14,7 +14,8 @@ Clubhouse is now open to all, here is the [direct link](https://www.clubhouse.co
 
 # 📲 Meetings
 
-> [Time Zone Converter](https://www.worldtimebuddy.com)
+> [Time Zone Converter](https://www.worldtimebuddy.com)  
+> [Event Time Announcer](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Performance+Engineers+Clubhouse+Meet&iso=20210904T11&p1=414&ah=1&am=30)
 
 |Date & Time | Topics | Link |
 |--|--|--|
