@@ -29,6 +29,7 @@ Clubhouse is now open to all, here is the [direct link](https://www.clubhouse.co
 | Aug 14 2021 - 11.00 AM EST | Recording and Scripting Challenges  | [Join](https://www.clubhouse.com/join/performance-engineers/H10OB0zQ/PY4Y3AdO) |
 | Aug 21 2021 - 11.00 AM EST | Evolution of Chaos Engineering - Guest Speaker: Karthik Satchitanand  | [Join](https://www.clubhouse.com/join/performance-engineers/mVMWveXd/xpXlkNLq) |
 | Aug 28 2021 - 11.30 AM EST | JMeter Productivity Hacks  | [Join](https://www.clubhouse.com/join/performance-engineers/hJoe3lox/myw40NBe) |
+| Sep 03 2021 - 11.00 AM EST | Performance Test Report  | [Join](https://www.clubhouse.com/join/performance-engineers/utGzTx9E/xpXWZ79L) |
 
 # 📽 Recordings
 
@@ -36,7 +37,7 @@ Please check [QAInsights YouTube playlist](https://youtube.com/playlist?list=PLJ
 
 # 👥 Members Count
 
-**350+**
+**400+**
 
 # ⚠ Rules
 
