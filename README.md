@@ -35,6 +35,7 @@ Clubhouse is now open to all, here is the [direct link](https://www.clubhouse.co
 | Sep 18 2021 - 11.30 AM EST | The Hitchhiking Guide To Load Testing Projects - Guest Speaker: Leandro Melendez  | [Join](https://www.clubhouse.com/join/performance-engineers/wPfHP4tv/m3Yn8oRk) |
 | Sep 25 2021 - 11.00 AM EST | Global Last-Mile Load Testing - Guest Speaker: Llyod Watts  | [Join](https://www.clubhouse.com/join/performance-engineers/nFYKMqmr/xVKOO1J0) |
 | Oct 02 2021 - 11.00 AM EST | Correlation Techniques  | [Join](https://www.clubhouse.com/join/performance-engineers/igWLec05/PD9knNYo) |
+| Oct 16 2021 - 11.00 AM EST | A Day in SRE’s Life w/ Shivam Mitra | [Join](https://www.clubhouse.com/join/performance-engineers/F9OteAPu/mgnywAK2) |
 
 
 # 📽 Recordings
@@ -43,7 +44,7 @@ Please check [QAInsights YouTube playlist](https://youtube.com/playlist?list=PLJ
 
 # 👥 Members Count
 
-**445+**
+**480+**
 
 # ⚠ Rules
 
