@@ -8,10 +8,10 @@ Apart from the generic Clubhouse rules, please note down the following:
 
 * Please join the `Performance Engineers` club and follow it
 * Please follow `NaveenKumar Namachivayam`, so that he can add you as a cohost while scheduling the session.
-* Be familiar with the Clubhouse app
-* Charge your mobile fully
-* Have water next to you
-* Join from quiet room
+* Be familiar with the Clubhouse app 🏡
+* Charge your mobile fully 🔋
+* Have water next to you, believe me, you need it 🥤
+* Join from quiet room 🤫
 
 > ⚠ IMPORTANT NOTE: Please do NOT start the session, I will be starting the session on time.
 
