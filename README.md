@@ -37,6 +37,9 @@ Clubhouse is now open to all, here is the [direct link](https://www.clubhouse.co
 | Oct 02 2021 - 11.00 AM EST | Correlation Techniques  | [Join](https://www.clubhouse.com/join/performance-engineers/igWLec05/PD9knNYo) |
 | Oct 16 2021 - 11.00 AM EST | A Day in SRE’s Life w/ Shivam Mitra | [Join](https://www.clubhouse.com/join/performance-engineers/F9OteAPu/mgnywAK2) |
 | Oct 23 2021 - 11.00 AM EST | Performance Testing Certifications | [Join](https://www.clubhouse.com/event/MEA3JA0p) |
+| Oct 30 2021 - 11.00 AM EST | Collaboration in Performance Testing | [Join](https://www.clubhouse.com/event/mJo5Xdan) |
+| Nov 06 2021 - 11.00 AM EST | Ask Me Anything | [Join](#) |
+| Nov 13 2021 - 11.00 AM EST | Automating Performance Test Results and Analysis | [Join](https://www.clubhouse.com/event/MdAdn967) |
 
 
 # 📽 Recordings
