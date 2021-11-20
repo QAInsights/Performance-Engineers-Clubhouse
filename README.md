@@ -40,6 +40,7 @@ Clubhouse is now open to all, here is the [direct link](https://www.clubhouse.co
 | Oct 30 2021 - 11.00 AM EST | Collaboration in Performance Testing | [Join](https://www.clubhouse.com/event/mJo5Xdan) |
 | Nov 06 2021 - 11.00 AM EST | Ask Me Anything | [Join](#) |
 | Nov 13 2021 - 11.00 AM EST | Automating Performance Test Results and Analysis | [Join](https://www.clubhouse.com/event/MdAdn967) |
+| Nov 20 2021 - 11.00 AM EST | Deep dive into Stress Testing | [Join](https://www.clubhouse.com/event/mWV7o00Y) |
 
 
 # 📽 Recordings
