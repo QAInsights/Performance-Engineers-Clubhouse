@@ -41,6 +41,7 @@ Clubhouse is now open to all, here is the [direct link](https://www.clubhouse.co
 | Nov 06 2021 - 11.00 AM EST | Ask Me Anything | [Join](#) |
 | Nov 13 2021 - 11.00 AM EST | Automating Performance Test Results and Analysis | [Join](https://www.clubhouse.com/event/MdAdn967) |
 | Nov 20 2021 - 11.00 AM EST | Deep dive into Stress Testing | [Join](https://www.clubhouse.com/event/mWV7o00Y) |
+| Jan 07 2022 - 11.00 AM EST | Interview Preparation - AMA | [Join](https://www.clubhouse.com/room/xjYj7E4k0) |
 
 
 # 📽 Recordings
