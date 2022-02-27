@@ -45,10 +45,10 @@ Clubhouse is now open to all, here is the [direct link](https://www.clubhouse.co
 | Dec 18 2021 - 11.00 AM EST | Log4j Vulnerability for Performance Engineers | [Replay](https://www.clubhouse.com/room/PAjNvy76) |
 | Jan 07 2022 - 11.00 AM EST | Interview Preparation - AMA | [Replay](https://www.clubhouse.com/room/xjYj7E4k) |
 | Jan 29 2022 - 11.00 AM EST | Getting Started with Terraform | [Replay](https://www.clubhouse.com/room/m25XB86z) |
-| Feb 05 2022 - 11.00 AM EST | How Distributed Load Testing works? | [Join](https://www.clubhouse.com/room/maQ5vQEq) |
-| Feb 12 2022 - 11.00 AM EST | Performance Engineering and Accessibility | [Join](https://www.clubhouse.com/room/PD6WKYWM) |
-| Feb 19 2022 - 11.00 AM EST | GUI vs CLI Performance Testing Tools | [Join](https://www.clubhouse.com/room/xoXobl9Y) |
-| Feb 26 2022 - 11.00 AM EST | Do’s and Don’ts in Performance Test Scripting | [Join](https://www.clubhouse.com/room/xjXGdaJ8) |
+| Feb 05 2022 - 11.00 AM EST | How Distributed Load Testing works? | [Replay](https://www.clubhouse.com/room/maQ5vQEq) |
+| Feb 12 2022 - 11.00 AM EST | Performance Engineering and Accessibility | [Replay](https://www.clubhouse.com/room/PD6WKYWM) |
+| Feb 19 2022 - 11.00 AM EST | GUI vs CLI Performance Testing Tools | [Replay](https://www.clubhouse.com/room/xoXobl9Y) |
+| Feb 26 2022 - 11.00 AM EST | Do’s and Don’ts in Performance Test Scripting | [Replay](https://www.clubhouse.com/room/xjXGdaJ8) |
 
 
 # 📽 Recordings
