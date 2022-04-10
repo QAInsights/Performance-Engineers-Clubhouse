@@ -6,7 +6,7 @@ Apart from the generic Clubhouse rules, please note down the following:
 
 # 0️⃣ Before the session
 
-* Please join the `Performance Engineers` club and follow it
+* Please join the [Performance Engineers](https://www.clubhouse.com/club/performance-engineers) club and follow it
 * Please follow `NaveenKumar Namachivayam`, so that he can add you as a cohost while scheduling the session.
 * Be familiar with the Clubhouse app 🏡
 * Charge your mobile fully 🔋
